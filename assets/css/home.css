@@ -1,0 +1,20 @@
+.button{
+    background-color: #463d3c; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+	display: inline-block;
+	position: relative;
+    font-size: 16px;
+	cursor: pointer;
+	border-radius:2em;
+}
+.img-circle{
+	width:200px;
+	height: 200px;
+}
+.paragraph{
+    color: white;
+}
