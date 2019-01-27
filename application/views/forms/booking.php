@@ -32,7 +32,7 @@ if(isset($message)){
       <input type="radio" name="service" value="hair styling"> Hair styling <br>
     </div>
     <div class="form-group">
-      <input type="radio" name="service" value="plaiting " checked>Hair plating<br>
+      <input type="radio" name="service" value="plaiting " checked>Hair plaiting<br>
       <input type="radio" name="service" value="hair trimming"> Hair trimming <br>
     </div>
     <div class="form-group">

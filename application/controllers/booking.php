@@ -50,5 +50,5 @@ class Booking extends CI_Controller {
         $this->load->view('forms/booking',$msg);
         $this->load->view('templates/footer');
     }
-// tetsvdhvkjsvdjvasuhjvzjhvas
+
 }

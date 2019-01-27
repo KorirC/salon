@@ -49,6 +49,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
+//routes for admin checking bookings
+$route['admin_bookings']='checkbookings/index';
+$route['forms/admin_bookings']='forms/admin_bookings';
+
 // routes for stylist
 
 $route['addstylist']='stylist/recruit_stylist';
