@@ -1,5 +1,5 @@
 <?php
-class stylist_model extends CI_Model{
+class Stylist_model extends CI_Model{
 
     //function to insert the stylist
     public function recruit($name,$id,$gender,$email,$phone,$hairstyle){

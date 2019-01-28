@@ -1,5 +1,5 @@
 <?php
-class booking_model extends CI_Model{
+class Booking_model extends CI_Model{
 
     //function to insert the client
     public function appointment($id,$date,$service){

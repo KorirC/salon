@@ -27,7 +27,7 @@ class Booking extends CI_Controller {
             }
             else
             {
-                $this->booking_model->appointment();
+                $this->Booking_model->appointment();
                         redirect('book');
             }
     }
@@ -40,7 +40,7 @@ class Booking extends CI_Controller {
         $service=$this->input->post('service');
         $date=$this->input->post('date');
 
-         $this->booking_model->appointment($id,$date,$service);
+         $this->Booking_model->appointment($id,$date,$service);
          $this->client_appointment();
 
     }

@@ -13,9 +13,9 @@ public function register_client(){
     $comfirm_password=$this->input->post('cpwd');
 
     if($password===$comfirm_password){
-        $count=$this->client_model->check_exist($id);
+        $count=$this->Client_model->check_exist($id);
         if($count<1){
-         $this->client_model->insert_client($id,$name,$gender,$email,$phone,$password);
+         $this->Client_model->insert_client($id,$name,$gender,$email,$phone,$password);
          $this->login();
         }else{
     
@@ -45,7 +45,7 @@ public function register_client(){
     public function auth_user(){
         $phone=$this->input->post('phoneno');
         $password=$this->input->post('pwd');
-        $users= $this->client_model->login($phone,$password);
+        $users= $this->Client_model->login($phone,$password);
 
 
         if(!empty($users)){

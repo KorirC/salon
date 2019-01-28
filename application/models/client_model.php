@@ -1,5 +1,5 @@
 <?php
-class client_model extends CI_Model{
+class Client_model extends CI_Model{
 
     //function to insert the client
     public function insert_client($id,$name,$gender,$email,$phone,$password){

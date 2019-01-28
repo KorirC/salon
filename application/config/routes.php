@@ -82,7 +82,7 @@ $route['login']='client/login';
 $route['logout']='client/logout';
 $route['home']='pages/view';
 
-// $route['forms/register']='forms/register';
+$route['forms/register']='forms/register';
 // $route['forms/(:any)']='forms/view/$1';
 $route['forms']='forms/index';
 $route['default_controller'] = 'pages/view';
@@ -90,5 +90,5 @@ $route['default_controller'] = 'pages/view';
 $route['404_override'] = '';
 
 // new routes
-//$route['register']='client/register_client';
+$route['register']='client/register_client';
 $route['translate_uri_dashes'] = FALSE;

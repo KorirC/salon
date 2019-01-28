@@ -19,7 +19,7 @@ class Stylist extends CI_Controller {
             }
             else
             {
-                $this->stylist_model->recruit();
+                $this->Stylist_model->recruit();
                         redirect('stylist');
             }
     }
@@ -40,9 +40,9 @@ class Stylist extends CI_Controller {
         // $this->stylist_model->recruit($name,$id,$gender,$email,$phone,$hairstyle);
        
 
-         $count=$this->stylist_model->check_exist($id);
+         $count=$this->Stylist_model->check_exist($id);
         if($count<1){
-         $this->stylist_model->recruit($name,$id,$gender,$email,$phone,$hairstyle);
+         $this->Stylist_model->recruit($name,$id,$gender,$email,$phone,$hairstyle);
          $this->stylist_adding();
         }else{
     
