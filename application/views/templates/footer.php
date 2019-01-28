@@ -1,14 +1,14 @@
         </div>
 
         <footer>
-            <div class="container">
+            <div class="container-fluid">
                 <!--footer row-->
             <div class="row" style="background-color: #222;">
                 
                 <div class="col-md-3 col-lg-3 col-sm-12">
                 <h4 style="color:#337ab7;">About us</h4>
                 <p style="color:white;FONT-FAMILY: -webkit-pictograph;">We aim to be your home from home,<br>where you always feel special and welcome within our relaxed,<br>unhurried surroundings,<br>all designed to ensure your total relaxation.<br><br>
-                At Kurls and Kuts our staff are trained to the highest of standards.</p>
+                At Wahu salon our staff are trained to the highest of standards.</p>
                 </div>
 
                 <div class="col-md-3 col-lg-3 col-sm-12">

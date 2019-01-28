@@ -4,7 +4,7 @@
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="formcard " style="margin: auto; max-width:300px; margin-bottom:30px;margin-top:20px;">
+<div class="formcard " >
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('auth_client'); ?>
@@ -27,7 +27,7 @@
 
 
   <button type="submit" class="btn btn-default">Submit</button>
-</form>
+</form><br><br><br><br><br><br><br><br>
 
 </body>
 </html>

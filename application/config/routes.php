@@ -49,28 +49,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+//gallery
+$route['gallery']='forms/gallery';
+$route['forms/gallery']='forms/gallery';
+
+//services
+$route['forms/services']='forms/services';
+
+//routes for admin checking stylists
+$route['admin_stylists']='checkstylists/index';
+// $route['forms/stylists']='forms/admin_stylists';
 
 //routes for admin checking bookings
 $route['admin_bookings']='checkbookings/index';
-$route['forms/admin_bookings']='forms/admin_bookings';
+// $route['forms/admin_bookings']='forms/admin_bookings';
 
 // routes for stylist
 
 $route['addstylist']='stylist/recruit_stylist';
-$route['forms/stylist']='forms/stylist';
+// $route['forms/stylist']='forms/stylist';
 
+
+$route['gallery']='gallery_controller/index';
 // routes for booking
 $route['book']='booking';
 $route['makebook']='booking/book_service';
-$route['forms/booking']='forms/booking';
+// $route['forms/booking']='forms/booking';
+
 //routes for login
 $route['auth_client']='client/auth_user';
 $route['login']='client/login';
 $route['logout']='client/logout';
 $route['home']='pages/view';
 
-$route['forms/register']='forms/register';
-$route['forms/(:any)']='forms/view/$1';
+// $route['forms/register']='forms/register';
+// $route['forms/(:any)']='forms/view/$1';
 $route['forms']='forms/index';
 $route['default_controller'] = 'pages/view';
 // $route['(:any)']='pages/view/$1';

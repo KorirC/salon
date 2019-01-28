@@ -2,7 +2,7 @@
   <div class="jumbotron" >
     <h1 style="text-align: center; font-family: auto;
     font-variant-caps: small-caps;">Wahu Salon</h1>
-    <a href="<?php echo base_url();?>booking" class="btn btn-default">Make An Appointment</a>
+    <a href="<?php echo base_url();?>booking" class="btn btn-default" style="float:right;">Make An Appointment</a>
   </div>
 <!-- beginning of first row -->
 <div class="row" style=" background-color:#eee;">
@@ -10,7 +10,7 @@
    
     <!--column with image-->
     <div class="col-md-6 col-lg-6 col-sm-12">
-    <img src="assets/img/mixed.jpg" style="width:500px;height:400px; padding-left:30px;">
+    <img src="assets/img/GoldenBlondeCornrowsBun.jpg" style="width:500px;height:400px; padding-left:30px;">
     </div>
     <!--column with the paragraph -->
     <div class="col-md-6 col-lg-6 col-sm-12">
@@ -31,10 +31,10 @@
     </div>
 
     <div class="col-md-4 col-lg-4 col-sm-12">
-    <img src="assets/img/bushycurl.jpg" class="img-circle" >
-    <p>Bob Bushy Curls @1,000KSH</p>
+    <img src="assets/img/GingerFeedInBraidsPonytail.jpg" class="img-circle" >
+    <p>Ginger FeedIn Braids Ponytail @2,000KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button" style="position:relative;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -48,8 +48,8 @@
 </div>
 <div class="row" style="padding-top:30px;  background-color:#eee;">
     <div class="col-md-4 col-lg-4 col-sm-12">
-    <img src="assets/img/sideshave.jpg" class="img-circle" >
-    <p>Side Shave Curls @1,500KSH</p>
+    <img src="assets/img/CelticKnotCornrowsHeadband.jpg" class="img-circle" >
+    <p>Celtic Knot Cornrows Headband @2,500KSH</p>
     <div>
     <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
@@ -82,8 +82,8 @@
     </div>
 
     <div class="col-md-4 col-lg-4 col-sm-12">
-    <img src="assets/img/beadedbraids.jpg" class="img-circle" >
-    <p>Feed in Beaded Braids @1,800KSH</p>
+    <img src="assets/img/GoldenBlondeCornrowsBun.jpg" class="img-circle" >
+    <p>Golden Blonde Cornrows Bun @1,800KSH</p>
     <div>
     <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
@@ -97,5 +97,5 @@
     </div>
     </div>
 </div>
-</div>
+</div><br><br>
 
