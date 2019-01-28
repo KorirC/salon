@@ -8,6 +8,16 @@
 
 <div class="container">
   <h2>Appointments Made</h2>
+  <div class="rightfloat">
+  <?php echo form_open('filter_by_date'); ?>
+      <label for="date">Filter by Date:</label>
+      <div class="form-group">
+          <input type="date" class="bt nbtn btn-default" name="date" placeholder="Enter date" required>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-filter">Filter</button>
+        </div>
+    </form>
+    </div>
+  
   <p></p>            
   <table class="table table-striped">
     <thead>

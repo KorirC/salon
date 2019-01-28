@@ -10,9 +10,15 @@
 					 REGISTER <hr>
         </div>
 
-<div class="formcard " style="background-color:#222; color:white; font-size:large; margin:; max-width:700px; margin-bottom:30px;margin-top:20px;margin-left:200px;">
-<?php echo validation_errors(); ?>
 
+ <div class="register_top">
+      <h2>REGISTER</h2>
+    <P style="text-align:center;FONT-FAMILY: -webkit-pictograph;">
+    We aim to be your home from home,where you always feel special and welcome within our relaxed, <br> unhurried surroundings, all designed to ensure your total relaxation. </P>
+ </div>
+
+<div class="formcard">
+<?php echo validation_errors(); ?>
 <?php echo form_open('register'); ?>
 <?php 
 if(isset($message)){
@@ -20,18 +26,15 @@ if(isset($message)){
 }
 
 ?>
-      <div>
-      <h2 style="text-align:center;FONT-FAMILY: -webkit-pictograph;">REGISTER</h2>
-    <P style="text-align:center;FONT-FAMILY: -webkit-pictograph;">
-We aim to be your home from home,where you always feel special and welcome within our relaxed, <br> unhurried surroundings, all designed to ensure your total relaxation. </P>
-      
-      </div>
+
+
+<!-- closed the top card there -->
      <!-- register form-->
     <div class="form-group">	
 
     <!--Beginning of row-->
     
-    <div class="row" style="margin-left:100px;background-color:white;margin-right:100px; color:black;FONT-FAMILY: -webkit-pictograph;">
+    <div class="row" style="margin-left:100px;margin-right:100px; color:black;FONT-FAMILY: -webkit-pictograph;">
     <div class="col-md-9 col-lg-9 col-sm-12" >
     
     <div class="form-group">

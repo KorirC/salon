@@ -8,6 +8,7 @@
 
 <div class="container">
   <h2>Stylists</h2>
+
   <p></p>            
   <table class="table table-striped">
     <thead>

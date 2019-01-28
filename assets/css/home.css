@@ -18,3 +18,53 @@
 .paragraph{
     color: white;
 }
+/* added topmenu css */
+.button_well{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left:10px;
+    background-color: rgb(226, 218, 218);
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(98, 120, 180);
+  }
+
+  .button_well :hover{
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left:10px;
+    background-color: rgb(133, 108, 108);
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:black;
+  }
+ 
+  /* register page css */
+.formcard{
+    background-color:rgba(130, 151, 172, 0.336);
+     color:rgb(39, 37, 37); 
+     font-size:large; 
+      margin:20px; 
+      max-width:500px;
+      margin-bottom:30px;
+      margin-top:20px;
+      margin-left:200px;
+      padding-top:50px;
+      padding-bottom: 50px;
+      border-radius: 20px;
+}
+
+.register_top{
+    min-height: 200px;
+    /* background-color:rgb(233, 230, 230); */
+}
+.rightfloat{
+    max-width: 300px;
+    float:right;
+}
