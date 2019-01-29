@@ -3,7 +3,7 @@
 class Checkbookings extends CI_Controller {
     public function index(){    
         $data['bookings']=$this->Admbookings->display_records();
-        $this->load->view('templates/header');
+        $this->load->view('templates/adminheader');
         $this->load->view('templates/topmenu');
         $this->load->view('forms/admin_bookings',$data);
       }  
@@ -11,7 +11,7 @@ class Checkbookings extends CI_Controller {
       public function displaydata()
       {
       $data['bookings']=$this->Admbookings->display_records();
-      $this->load->view('templates/header');
+      $this->load->view('templates/adminheader');
       $this->load->view('templates/topmenu');
       $this->load->view('forms/admin_bookings',$data);
       
@@ -21,7 +21,7 @@ class Checkbookings extends CI_Controller {
         public function filter_by_date(){
             $date=$this->input->post("date");
            if(isset($date)){
-            $this->load->view('templates/header');
+            $this->load->view('templates/adminheader');
             $this->load->view('templates/topmenu');
             $data['bookings']=$this->Admbookings->filter_by_date($this->convert_date($date));
             $this->load->view('forms/admin_bookings',$data);
@@ -29,7 +29,7 @@ class Checkbookings extends CI_Controller {
            }
            else{
             $data['bookings']=$this->Admbookings->display_records();
-               $this->load->view('templates/header');
+               $this->load->view('templates/adminheader');
                $this->load->view('templates/topmenu');
                $this->load->view('forms/admin_bookings',$data);
            }

@@ -24,12 +24,12 @@
     width: 200px;
     margin-top: 10px;
     margin-left:10px;
-    background-color: rgb(226, 218, 218);
+    background-color: rgb(233, 227, 227);
     padding-top: 20px;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    color: rgb(98, 120, 180);
+    color: #38397c;
   }
 
   .button_well :hover{
@@ -37,7 +37,7 @@
     width: 200px;
     margin-top: 10px;
     margin-left:10px;
-    background-color: rgb(133, 108, 108);
+    background-color: rgb(209, 202, 202);
     padding-top: 20px;
     font-weight: bold;
     font-size: 20px;
@@ -67,4 +67,23 @@
 .rightfloat{
     max-width: 300px;
     float:right;
+}
+
+
+/* custom admin nav bar css */
+.custom-nav{
+    color: #38397c !important;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100px;
+}
+
+.custom-nav .a{
+    color: inherit !important;  
+}
+
+.text-theme-one{
+    color: #38397c !important;
+    font-size: 20px;
 }
