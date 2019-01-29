@@ -43,6 +43,7 @@
             <td><?php echo $row->date;?></td> 
             <td><?php echo $row->service;?></td> 
             <td><a class="btn btn-success" href="/">Accept</a> <a class="btn btn-danger" href="/">Deny</a></td>   
+            
             </tr>  
          <?php }  
          ?>   

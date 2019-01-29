@@ -7,6 +7,7 @@ class Checkstylists extends CI_Controller {
         $this->load->view('templates/topmenu');
         $this->load->view('forms/admin_stylists',$data);
       }   
+      // function to display data
       public function displaydata()
       {
       $data['stylists']=$this->Admstylists->display_records();
@@ -14,6 +15,11 @@ class Checkstylists extends CI_Controller {
       $this->load->view('templates/topmenu');
       $this->load->view('forms/admin_stylists',$data);
       }
+      function delete_data() {
+        $id=$this->input->get('id');
+        
+        $this->Admstylists->delete_data($id);
+        $this->index();
+      }   
 
-    
 }

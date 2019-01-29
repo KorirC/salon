@@ -57,13 +57,16 @@ $route['forms/gallery']='forms/gallery';
 $route['forms/services']='forms/services';
 
 //routes for admin checking stylists
+$route['delete_data']='checkstylists/delete_data';
 $route['admin_stylists']='checkstylists/index';
 $route['admin']='admin';
+
 // $route['forms/stylists']='forms/admin_stylists';
 
 //routes for admin checking bookings
 $route['admin_bookings']='checkbookings/index';
 $route['filter_by_date']='checkbookings/filter_by_date';
+
 // $route['forms/admin_bookings']='forms/admin_bookings';
 
 // routes for stylist

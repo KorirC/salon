@@ -3,6 +3,7 @@
 <title>Stylists</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url("assets/img"); ?>" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -13,32 +14,42 @@
   <table class="table table-striped">
     <thead>
       <tr>
+
     <th>Name</th>   
     <th>Id</th>
     <th>Gender</th> 
     <th>Email</th>
     <th>Phone Number</th>
     <th>Hairstyle/s</th>
-   
+    <th>Action</th>
       </tr>
     </thead>
     <tbody>
     <?php  
+ 
          foreach ($stylists as $row)  
          {  
             ?><tr>
+           
             <td><?php echo $row->name;?></td>
             <td><?php echo $row->id;?></td>  
             <td><?php echo $row->gender;?></td>  
             <td><?php echo $row->email;?></td> 
             <td><?php echo $row->phone_number;?></td>
-            <td><?php echo $row->hairstyle;?></td>   
+            <td><?php echo $row->hairstyle;?></td> 
+            <td> <a class="btn btn-default" href="<?=base_url('delete_data');?>">Delete</a> </td> 
+
+      
             </tr>  
+     
          <?php }  
          ?>   
     </tbody>
   </table>
+  
+
 </div>
+
 </body>
 </html>
 
