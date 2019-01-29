@@ -15,11 +15,10 @@ class Checkstylists extends CI_Controller {
       $this->load->view('templates/topmenu');
       $this->load->view('forms/admin_stylists',$data);
       }
-      function delete_data() {
-        $id=$this->input->get('id');
-        
-        $this->Admstylists->delete_data($id);
+        //function to delete the stylist
+      public function delete_stylist($id){
+        $this->Admstylists->delete_stylist($id);
         $this->index();
-      }   
+      }
 
 }

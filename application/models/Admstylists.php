@@ -6,8 +6,12 @@ class Admstylists extends CI_Model{
 	$query=$this->db->query("select * from stylist_table");
 	return $query->result();
 	}
-	function delete_data($id){
-		$this->db->query("delete  from stylist_table where id='.$id.'");
+
+// function to delete the stylist
+	function delete_stylist($id){
+	return $this->db->delete('stylist_table', array('id' => $id)); 
 	}
+
+	
 	 
 }

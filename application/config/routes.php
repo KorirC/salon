@@ -57,7 +57,7 @@ $route['forms/gallery']='forms/gallery';
 $route['forms/services']='forms/services';
 
 //routes for admin checking stylists
-$route['delete_data']='checkstylists/delete_data';
+$route['delete_stylist/(:any)']='checkstylists/delete_stylist/$1';
 $route['admin_stylists']='checkstylists/index';
 $route['admin']='admin';
 
