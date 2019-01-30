@@ -16,8 +16,8 @@
 <a class="navbar-brand" href="<?php echo base_url();?>">Wahu Salon</a>
 </div>
 <div id="navbar">
-<ul class="nav navbar-nav">
-<li><a href="<?php echo base_url();?>">Home</a></li>
+<ul class="nav navbar-nav header_nav">
+<li><a href="<?php echo base_url();?>"><span class="glyphicon glyphicon-home"></span>Home</a></li>
 <li><a href="<?php echo base_url();?>forms/services">Services</a></li>
 <li><a href="<?php echo base_url();?>contact_us">Contact Us</a></li>
 <li><a href="<?php echo base_url();?>gallery">Gallery</a></li>
@@ -27,7 +27,7 @@ if(empty($this->session->userdata("userid"))){
 echo '
 <ul class="nav navbar-nav navbar-right">
   <li><a href="'.base_url().'forms">Sign Up</a></li>
-  <li><a href="'.base_url().'login">Sign in</a></li>
+  <li><a href="'.base_url().'login"><span class="glyphicon glyphicon-log-in ">Sign in</a></li>
  
   </ul>
 

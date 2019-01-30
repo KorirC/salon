@@ -2,7 +2,7 @@
 <head>
 <title>Form</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url("assets/img"); ?>" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 <div class="pagecontainer">
@@ -11,11 +11,7 @@
         </div>
 
 
- <div class="register_top">
-      <h2>REGISTER</h2>
-    <P style="text-align:center;FONT-FAMILY: -webkit-pictograph;">
-    We aim to be your home from home,where you always feel special and welcome within our relaxed, <br> unhurried surroundings, all designed to ensure your total relaxation. </P>
- </div>
+ 
 
 <div class="formcard">
 <?php echo validation_errors(); ?>
@@ -26,15 +22,20 @@ if(isset($message)){
 }
 
 ?>
+<div class="register_top">
+      <h2>REGISTER</h2>
+    <P style="text-align:center;FONT-FAMILY: -webkit-pictograph;">
+    We aim to be your home from home,where you always feel special and welcome within our relaxed, <br> unhurried surroundings, all designed to ensure your total relaxation. </P>
+ </div>
 
 
 <!-- closed the top card there -->
      <!-- register form-->
-    <div class="form-group">	
+    <div class="form-group-register">	
 
     <!--Beginning of row-->
     
-    <div class="row" style="margin-left:100px;margin-right:100px; color:black;FONT-FAMILY: -webkit-pictograph;">
+    <div class="row" style="">
     <div class="col-md-9 col-lg-9 col-sm-12" >
     
     <div class="form-group">

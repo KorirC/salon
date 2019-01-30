@@ -1,4 +1,4 @@
-/*div.img {
+/* div.img {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -18,3 +18,6 @@ div.desc {
     padding: 15px;
     text-align: center;
 } */
+a img{
+    border: 1px solid #ccc;
+}

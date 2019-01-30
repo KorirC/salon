@@ -19,8 +19,8 @@
     </div>
 </div><br><br>
 <!-- end of first row -->
-
-<div class="row" style="padding-top:30px; background-color:#eee; ">
+<div class="container_home">
+<div class="row" style="padding-top:30px;">
 <h2 style="text-align:center;FONT-FAMILY: -webkit-pictograph;">OUR SERVICES</h2>
     <div class="col-md-4 col-lg-4 col-sm-12">
     <img src="assets/img/cornrows.jpg" class="img-circle">
@@ -46,7 +46,7 @@
     </div>
     </div>
 </div>
-<div class="row" style="padding-top:30px;  background-color:#eee;">
+<div class="row" style="padding-top:30px;">
     <div class="col-md-4 col-lg-4 col-sm-12">
     <img src="assets/img/CelticKnotCornrowsHeadband.jpg" class="img-circle" >
     <p>Celtic Knot Cornrows Headband @2,500KSH</p>
@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<div class="row" style="padding-top:30px;  background-color:#eee;">
+<div class="row" style="padding-top:30px;">
     <div class="col-md-4 col-lg-4 col-sm-12">
     <img src="assets/img/fauxmohawk.jpg" class="img-circle" >
     <p>Faux-Mohawk @4,000KSH</p>
@@ -96,6 +96,7 @@
     <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
+</div>
 </div>
 </div><br><br>
 

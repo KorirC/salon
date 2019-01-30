@@ -4,16 +4,16 @@
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div class="formcard " >
+<div class="bg-img"> 
+<div class="formcard_login" >
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('auth_client'); ?>
 <?php if(isset($message)){
   echo $message;
 }?>
-    <div class="form-group">	
-
-    <!-- Structure of this need to be chaenged later -->
+    <h2 class="login">LOGIN</h2> 
+    <div class="form-group-login">	
      <div class="form-group">
       <label for="phoneno">Phone number:</label>
       <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number">
@@ -26,8 +26,9 @@
 
 
 
-  <button type="submit" class="btn btn-default">Submit</button>
-</form><br><br><br><br><br><br><br><br>
-
+  <button type="submit" class="btn-login btn-success">Submit</button>
+</form>
+</div>
+</div>
 </body>
 </html>
