@@ -26,7 +26,7 @@
 
 
 
-  <button type="submit" class="btn-login btn-success">Submit</button>
+  <button type="submit" class="btn-login btn-default">Submit</button>
 </form>
 </div>
 </div>

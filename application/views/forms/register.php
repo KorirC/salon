@@ -5,14 +5,10 @@
 
 </head>
 <body>
-<div class="pagecontainer">
+<div class="pagecontainer-reg">
 				<div class="headertext">
 					 REGISTER <hr>
         </div>
-
-
- 
-
 <div class="formcard">
 <?php echo validation_errors(); ?>
 <?php echo form_open('register'); ?>

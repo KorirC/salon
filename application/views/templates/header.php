@@ -27,7 +27,7 @@ if(empty($this->session->userdata("userid"))){
 echo '
 <ul class="nav navbar-nav navbar-right">
   <li><a href="'.base_url().'forms">Sign Up</a></li>
-  <li><a href="'.base_url().'login"><span class="glyphicon glyphicon-log-in ">Sign in</a></li>
+  <li><a href="'.base_url().'login"><span class="glyphicon glyphicon-log-in ">log In</a></li>
  
   </ul>
 

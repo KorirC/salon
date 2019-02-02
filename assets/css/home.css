@@ -47,10 +47,12 @@
  
   /* register page css */
 .formcard{
-    background-color:rgba(130, 151, 172, 0.336);
+    /* background-color:rgba(130, 151, 172, 0.336); */
     /* background-image: url( ../img/salon.jpg); */
+    background-color: whitesmoke;
      color:rgb(39, 37, 37); 
-     font-size:large; 
+     font-size:x-large; 
+     font-weight: bolder;
       margin:20px; 
       max-width:500px;
       margin-bottom:30px;
@@ -65,7 +67,7 @@
     background-repeat: repeat-y;
 }
 .form-group-register{
-   margin-left: 20px;
+   margin-left: 30px;
     font-family: -webkit-pictograph;
 }
 
@@ -82,6 +84,19 @@
 .rightfloat{
     max-width: 300px;
     float:right;
+}
+.pagecontainer-reg{
+        /* The image used */
+  background-image: url("../img/salon.jpg");
+
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 
@@ -106,10 +121,11 @@
 
 /* login page*/
 .formcard_login{
-    background-color:rgba(130, 151, 172, 0.336);
+     /* background-color:rgba(130, 151, 172, 0.336);  */
+    background-color: whitesmoke;
     color:rgb(39, 37, 37); 
-    font-weight: 600;
-    font-size:large; 
+    font-weight: 600; 
+     font-size:large; 
      margin:20px; 
      max-width:500px;
      min-height: 300px;
@@ -118,10 +134,11 @@
      margin-top:20px;
      padding-top:40px;
      padding-bottom: 40px;
-     border-radius: 20px;
+      border-radius: 20px; 
 }
 .form-group-login{
     margin-left: 20px;
+   
     margin-right: 20px;
     padding-top:40px;
     font-family: -webkit-pictograph;
@@ -166,9 +183,11 @@
 }
 .navbar-nav a{
     font-family: -webkit-pictograph;
-    color:white;
+    color:blue;
     font-size: large;
 }
+
+
 /* gallery css */
 .row_gallery{
         display: flex;
@@ -190,31 +209,28 @@
       max-width: 100%;
     }
   }
-
-
-
-/* a img{
-    border: 1px solid rgb(190, 26, 26);
-    border-radius: 40px;
-    
+.container-gallery{
+    position: relative;
+    width: 100%;
+    /* max-width: 300px; */
+}  
+.overlay{
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }
-a img:hover{
-    border: 1px solid rgb(190, 26, 26);
-    border-radius: 40px;
-    animation: shake 0.5s; 
-    animation-iteration-count: 5; 
+.container-gallery:hover .overlay {
+    opacity: 1;
+}  
 
-}
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  } */
+
+

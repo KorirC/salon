@@ -67,6 +67,7 @@ $route['admin']='admin';
 $route['admin_bookings']='checkbookings/index';
 $route['filter_by_date']='checkbookings/filter_by_date';
 
+
 // $route['forms/admin_bookings']='forms/admin_bookings';
 
 // routes for stylist
@@ -79,6 +80,7 @@ $route['gallery']='gallery_controller/index';
 // routes for booking
 $route['book']='booking';
 $route['makebook']='booking/book_service';
+$route['display_count']='booking/display_count';
 // $route['forms/booking']='forms/booking';
 
 //routes for login
