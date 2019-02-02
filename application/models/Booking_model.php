@@ -11,7 +11,8 @@ class Booking_model extends CI_Model{
             'email'=>$client['email'],
             'phone_number'=>$client['phone_number'],
             'date'=>$date,
-            'service'=>$service
+            'service'=>$service,
+            'status'=>"waiting"
         );
  return $this->db->insert('booking_table',$data);
     }
@@ -25,15 +26,6 @@ class Booking_model extends CI_Model{
     }
     
 
-    public function get_count($datepick){
-        $date=date('d');
-        
-        $query=$this->db->get_where('booking_table',$columns_arr=('date'),$where_arr=('date'===$date));
-        // $this->db->group_by('date');
-        $result=$query->num_rows();
-        $count = $result['COUNT(*)'];
-        // return $result;
-    }
    
    public function countbookings(){
        $date=date('d');

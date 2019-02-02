@@ -42,7 +42,8 @@
             <td><?php echo $row->phone_number;?></td>
             <td><?php echo $row->date;?></td> 
             <td><?php echo $row->service;?></td> 
-            <td><a class="btn btn-success" href="/">Accept</a> <a class="btn btn-danger" href="/">Deny</a></td>   
+            <td><a class="btn btn-success" href="<?php echo base_url('accept/').$row->auto."/".$row->id ?>">Accept</a>
+             <a class="btn btn-danger" href="<?php echo base_url('reject/').$row->auto ?>">Deny</a></td>   
             
             </tr>  
          <?php }  

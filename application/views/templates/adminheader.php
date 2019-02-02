@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Wahu Salon</title>
+<script src="<?php echo base_url("assets/css/Chart.min.js"); ?>"></script>
 <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url("assets/css/home.css"); ?>" rel="stylesheet" type="text/css" />

@@ -81,6 +81,9 @@ $route['gallery']='gallery_controller/index';
 $route['book']='booking';
 $route['makebook']='booking/book_service';
 $route['display_count']='booking/display_count';
+$route['accept/(:any)/(:any)']='checkbookings/accept_booking/$1/$2';
+$route['income/(:any)/(:any)']='checkbookings/insert_earning/$1/$2';
+$route['reject/(:any)']='checkbookings/reject_booking/$1';
 // $route['forms/booking']='forms/booking';
 
 //routes for login
@@ -99,3 +102,7 @@ $route['404_override'] = '';
 // new routes
 $route['register']='client/register_client';
 $route['translate_uri_dashes'] = FALSE;
+
+
+// earning routes
+$route['earning']='earning';

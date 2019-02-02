@@ -20,9 +20,9 @@ class Booking extends CI_Controller {
        
             // if ($this->form_validation->run() == FALSE)
             // {
-                   
+                    $bookings['bookings']=$this->get_next_booking();
                     $this->load->view('templates/header');
-                    $this->load->view('forms/booking');
+                    $this->load->view('forms/booking',$bookings);
                     $this->load->view('templates/footer');
             // }
             // else
@@ -46,29 +46,33 @@ class Booking extends CI_Controller {
     }
     public function client_appointment(){
         $msg['message']='';
+        $msg['bookings']=$this->get_next_booking();
         $this->load->view('templates/header');
         $this->load->view('forms/booking',$msg);
         $this->load->view('templates/footer');
     }
 
-    public function display_count(){
-        $this->Booking_model->countbookings();
-        $this->client_appointment();
-    }
+    // public function display_count(){
+    //     $this->Booking_model->countbookings();
+    //     $this->client_appointment();
+    // }
 
     //function to get booking from today and six more days
     public function get_next_booking(){
         $booking=array();
         $days=array();
         $now=date('d');
-
-        for($i=$now;$i<=$now+6;$i++){
-            $date=date('Y-m-'."-".$i);
-            $book=$this->Admbooking-> filter_by_date( convert_date($date));
+        
+        $count=$now;
+        $max=$count+7;
+        for(;$count<$max;$count++){
+             $i=$count;
+            $date=date('Y-m-'.$i);
+            $book=$this->Admbookings-> filter_by_date($this->convert_date($date));
             array_push($booking,sizeof($book));
             array_push($days,$date);
-            return array($days,$booking);
         }
+          return array($days,$booking);
     }
 
      //function to convert date format

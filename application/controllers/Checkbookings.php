@@ -40,4 +40,26 @@ class Checkbookings extends CI_Controller {
            return $newDate = date("Y-m-d", strtotime($date));
          }
 
+         //function to accept the booking
+          public function accept_booking($id,$userid){
+            $data['auto_id']=$id;
+            $data['user_id']=$userid;
+             $this->load->view('templates/adminheader');
+             $this->load->view('forms/amount',$data);
+
+          }
+            //function to reject the booking
+          public function reject_booking($id){
+            $this->Admbookings->change_status($id,"Rejected");
+          }
+
+          //add earning
+          public function insert_earning($autoid,$id){
+            $amount=$this->input->post('amount');
+            $this->Earning_model->insert_earning($id,$amount);
+            $this->Admbookings->change_status($autoid,"Cleared");
+            redirect('admin_bookings');
+          }
+
+
 }
