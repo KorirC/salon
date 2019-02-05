@@ -29,7 +29,7 @@ if(empty($this->session->userdata("userid"))){
 echo '
 <ul class="nav navbar-nav navbar-right">
   <li><a class="text-theme-one" href="'.base_url().'forms">Sign Up</a></li>
-  <li><a class="text-theme-one" href="'.base_url().'login">Sign in</a></li>
+  <li><a class="text-theme-one" href="'.base_url().'login"><span class="glyphicon glyphicon-log-in "> Log In</a></li>
  
   </ul>
 

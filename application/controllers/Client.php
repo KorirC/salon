@@ -9,21 +9,22 @@ public function register_client(){
     $gender=$this->input->post('gender');
     $email=$this->input->post('email');
     $phone=$this->input->post('phoneno');
+    $level=$this->input->post('level');
     $password=$this->input->post('pwd');
     $comfirm_password=$this->input->post('cpwd');
 
     if($password===$comfirm_password){
         $count=$this->Client_model->check_exist($id);
         if($count<1){
-         $this->Client_model->insert_client($id,$name,$gender,$email,$phone,$password);
+         $this->Client_model->insert_client($id,$name,$gender,$email,$phone,$level,$password);
          $this->login();
         }else{
     
-            $this->return_page("A user with the same id exist");
+            echo ("A user with the same id exist");
         }
        
     }else{
-        $this->return_page("Passwords do not much");
+       echo ("Passwords do not much");
     }
 
 }
@@ -48,18 +49,46 @@ public function register_client(){
         $users= $this->Client_model->login($phone,$password);
 
 
-        if(!empty($users)){
+        // if(!empty($users)){
         
-            //do something 
-              //save the logged in user
-            $this->session->set_userdata("userid",$users['id']);
+        //     //do something 
+        //       //save the logged in user
+        //     $this->session->set_userdata("userid",$users['id']);
          
-            redirect("home");
+        //     redirect("home");
           
             
+        // }else{
+        //     $this->return_login("wrong credentials");
+        // }
+
+        if($users->num_rows() > 0){
+            $data  = $users->row_array();
+            $phone = $data['phone_number'];
+            $password  = $data['password'];
+            $level = $data['user_level'];
+            $sesdata = array(
+                'phoneno'     => $phone,
+                'pwd'      => $password,
+                'level'     => $level,
+                'logged_in' => TRUE
+            );
+            $this->session->set_userdata($sesdata);
+            // access login for admin
+            if($level === '1'){
+                redirect('admin_bookings');
+     
+            // access login for staff
+            }elseif($level === '2'){
+                redirect('home');
+     
+            // access login for author
+            }
         }else{
-            $this->return_login("wrong credentials");
+            echo $this->session->set_flashdata('msg','Username or Password is Wrong');
+            redirect('login');
         }
+
     }
     //return user to login page
     private function return_login($message){

@@ -2,13 +2,14 @@
 class Client_model extends CI_Model{
 
     //function to insert the client
-    public function insert_client($id,$name,$gender,$email,$phone,$password){
+    public function insert_client($id,$name,$gender,$email,$phone,$level,$password){
         $data=array(
             'id'=>$id,
             'name'=>$name,
             'gender'=>$gender,
             'email'=>$email,
             'phone_number'=>$phone,
+            'user_level'=>$level,
             'password'=>$password
         );
  return $this->db->insert('client_table',$data);
@@ -24,8 +25,8 @@ class Client_model extends CI_Model{
 
     //function to login
     public function login($phone,$password){
-        $query=$this->db->get_where('client_table',array('phone_number'=>$phone, 'password'=>$password));
-        return $query->row_array();
+        $query=$this->db->get_where('client_table',array('phone_number'=>$phone, 'password'=>$password),1);
+        return $query;
     }
 
     //function for insert client booking/ appointements
