@@ -3,7 +3,7 @@
 class Booking extends CI_Controller {
     //check if the user is logged in
     private function is_logged_in(){
-        $id= $this->session->set_userdata($sesdata);
+        $id=$this->session->userdata('userid');
         if(!isset($id)){
             // this user is not logged in
 

@@ -75,7 +75,10 @@ $route['filter_by_date']='checkbookings/filter_by_date';
 $route['addstylist']='stylist/recruit_stylist';
 // $route['forms/stylist']='forms/stylist';
 
+//service page
+$route['service']='service_controller/index';
 
+//gallery page
 $route['gallery']='gallery_controller/index';
 // routes for booking
 $route['book']='booking';
