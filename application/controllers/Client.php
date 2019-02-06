@@ -67,9 +67,12 @@ public function register_client(){
             $phone = $data['phone_number'];
             $password  = $data['password'];
             $level = $data['user_level'];
+            
+            
             $sesdata = array(
-                'phoneno'     => $phone,
-                'pwd'      => $password,
+                'userid'=>$data['id'],
+                'phoneno' => $phone,
+                'pwd'  => $password,
                 'level'     => $level,
                 'logged_in' => TRUE
             );
@@ -86,7 +89,7 @@ public function register_client(){
             }
         }else{
             echo $this->session->set_flashdata('msg','Username or Password is Wrong');
-            redirect('login');
+            // redirect('login');
         }
 
     }
