@@ -61,14 +61,10 @@ class Booking extends CI_Controller {
     public function get_next_booking(){
         $booking=array();
         $days=array();
-        $now=date('d');
-        
-        $count=$now;
-        $max=$count+7;
-        for(;$count<$max;$count++){
+        for($count=0;$count<7;$count++){
              $i=$count;
-            $date=date('Y-m-'.$i);
-            $book=$this->Admbookings-> filter_by_date($this->convert_date($date));
+            $date=date('Y-m-d', strtotime("+".$i." days"));
+            $book=$this->Admbookings-> filter_by_date($date);
             array_push($booking,sizeof($book));
             array_push($days,$date);
         }

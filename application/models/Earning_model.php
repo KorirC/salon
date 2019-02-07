@@ -8,6 +8,11 @@ public function insert_earning($user,$amount){
     return $result;
 }
 
+//get earning per date
+public function get_earning_by_date($date){
+    $query=$this->db->get_where("earning_table", array("date"=>$date));
+	return $query->result_array();
+}
 }
 
 ?>
