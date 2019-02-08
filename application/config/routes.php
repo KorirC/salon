@@ -107,4 +107,4 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 // earning routes
-$route['earning']='earning';
+$route['earnings']='earning';
