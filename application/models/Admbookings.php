@@ -20,6 +20,5 @@ class Admbookings extends CI_Model{
 		$where=array('auto'=>$id);
 		$result=$this->db->update('booking_table', $data, $where);
 		return $result;
-	}
-	
+	}	
 }

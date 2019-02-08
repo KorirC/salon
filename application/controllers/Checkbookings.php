@@ -51,6 +51,7 @@ class Checkbookings extends CI_Controller {
             //function to reject the booking
           public function reject_booking($id){
             $this->Admbookings->change_status($id,"Rejected");
+            redirect('admin_bookings');
           }
 
           //add earning

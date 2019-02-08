@@ -15,8 +15,8 @@
     </div>
 
     <div class="container-gallery">
-    <img src="assets/img/appointment1.jpg" style="width:100%;">
-    <div class="overlay">Brazilian Wig</div>
+    <img src="assets/img/longcurvygoddessbraids.jpg" style="width:100%;">
+    <div class="overlay">Long curvy braids</div>
     </div>
 
     <div class="container-gallery">

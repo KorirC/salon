@@ -7,14 +7,14 @@
 <body>
 
 <div class="container">
-  <h2>Enter the Ammount Paid</h2>
+  <h2>Enter the Amount Paid</h2>
   <div class="">
   
   <?php echo form_open('income'."/".$auto_id."/".$user_id); ?>
       <label for="amount">Enter the amount:</label>
       <div class="form-group">
           <input type="number" class="bt nbtn btn-default" name="amount" placeholder="Enter amount" required>
-          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-filter">Submit</button>
+          <button type="submit" class="btn btn-default">Submit</button>
         </div>
     </form>
     </div>

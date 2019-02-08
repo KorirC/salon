@@ -66,14 +66,13 @@ $route['admin']='admin';
 //routes for admin checking bookings
 $route['admin_bookings']='checkbookings/index';
 $route['filter_by_date']='checkbookings/filter_by_date';
-
+//feedback page
+$route['feedback']='adminfeedback/index';
 
 // $route['forms/admin_bookings']='forms/admin_bookings';
 
 // routes for stylist
-
 $route['addstylist']='stylist/recruit_stylist';
-// $route['forms/stylist']='forms/stylist';
 
 //service page
 $route['service']='service_controller/index';
