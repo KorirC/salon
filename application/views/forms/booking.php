@@ -116,64 +116,22 @@ if(isset($message)){
   <button type="submit" class="btn btn-default">Submit</button>
   </div>
 </div>  
-    <!-- <div class="form-group">	 -->
-  <!-- Booking Form-->
-   <!-- beginning of row-->
-    <!-- <div class="row"> -->
-   
-    <!-- <h2>Book Now</h2>
-</div>
-  
-    <label for="idno">Select service:</label>
-  
-      <div class="col-md-6">
-      <label>
-      <input type="radio" name="service" value="Blow dry" checked>Blow dry<br>
-      <img src="assets/img/haircut.jpg">
-    </label>
-</div>
-<div class="col-md-6">
-    <label>
-      <input type="radio" name="service" value="hair styling"> Hair styling <br>
-      <img src="assets/img/haircut.jpg">
-</label>
-</div>
-<div class="col-md-6">
-    <label>
-      <input type="radio" name="service" value="hair styling"> Hair styling <br>
-      <img src="assets/img/haircut.jpg">
-</label>
-</div>
-<div class="col-md-6">
-    <label>
-      <input type="radio" name="service" value="hair styling"> Hair styling <br>
-      <img src="assets/img/haircut.jpg">
-</label>
-</div>
-    </div>
-    <div class="form-group">
-      <label>
-      <input type="radio" name="service" value="plaiting " checked>Hair plaiting<br>
-      <img src="assets/img/haircut.jpg">
-      </label>
-      <label>
-      <input type="radio" name="service" value="hair trimming"> Hair trimming <br>
-      <img src="assets/img/haircut.jpg">
-      </label>
-    </div>
-    <div class="form-group">
-      <label for="date">Date:</label>
-      <input type="date" class="form-control" name="date" placeholder="Enter date" required>
-    </div>
-  <div class="form-group">
-  <button type="submit" class="btn btn-default">Submit</button>
-  </div>
-  </div>
- 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Get In Touch</h3>
+            <p>We would love to hear from you about our services and how we can best improve them to suit your needs. Kindly give us  a feed back </p>
+        </div>
+        <div class="col-md-6">
+        <textarea name="your_message" cols="50" rows="7">
 
-  </div> -->
-<!-- end of row-->
-<!-- </form> -->
+        </textarea> <br>
+        <div>
+        <a class="btn btn-default" href="<?php echo base_url('feedback'); ?>">Submit</a>
+        </div>
+        </div>
+    </div>
+</div>
 <div>
 <h1>Graphical booking</h1>
 </div>

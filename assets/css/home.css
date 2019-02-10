@@ -237,18 +237,10 @@
 }
 .container-gallery:hover .overlay {
     opacity: 1;
-}  
-/* service page */
-
-/* .container-service{
-    width: 800px;
-    height: 800px;
 }
-.container-service img{
-    width:300px;
-    height:300px;
-} */
-
 .col-md-1{
-    background-color: red;
+    background-color: rgb(14, 119, 119);
+}
+.col-md-2{
+    background-color: rgb(14, 119, 119);
 }

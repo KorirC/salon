@@ -17,6 +17,7 @@ class Booking_model extends CI_Model{
  return $this->db->insert('booking_table',$data);
     }
 
+    
     //get the user from db
     private function get_user($id){
         
@@ -25,6 +26,8 @@ class Booking_model extends CI_Model{
         return $result;
     }
     
+  
 }
+    
 
       

@@ -9,31 +9,14 @@ class Feedback_controller extends CI_Controller {
 
         }
     }
-    // public function index(){
-    //     $this->is_logged_in();
-    //     $this->load->view('templates/header');
-    //     $this->load->view('forms/feedback'); 
-    //     $this->load->view('templates/footer'); 
-    
-    // }
-    
-    //function to enter feedback
-    public function enter_feedback(){
+      // function for feed back
+      public function enter_feedback(){
         $id=$this->session->userdata('userid');
-        $message=$this->input->post('message');
+        $message=$this->input->post('your_message');
 
         $this->Feedback_model->enter_message($id,$message);
-        $this->return_feedback();
-
+        redirect('booking');
     }
-    // function to return the feedback page
-    public function return_feedback(){  
-        $msg['message']='';
-        $this->load->view('templates/header');
-        $this->load->view('forms/feedback',$msg); 
-        $this->load->view('templates/footer'); 
-       
-    }  
-
+    
 }
 ?>

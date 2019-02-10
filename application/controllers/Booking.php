@@ -1,5 +1,4 @@
 <?php
-
 class Booking extends CI_Controller {
     //check if the user is logged in
     private function is_logged_in(){
@@ -44,6 +43,7 @@ class Booking extends CI_Controller {
          $this->client_appointment();
 
     }
+    // function to return to booking page
     public function client_appointment(){
         $msg['message']='';
         $msg['bookings']=$this->get_next_booking();
@@ -69,5 +69,6 @@ class Booking extends CI_Controller {
      private function convert_date($date){
         return $newDate = date("Y-m-d", strtotime($date));
       }
+  
     
 }

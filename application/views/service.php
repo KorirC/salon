@@ -33,16 +33,16 @@ div.container_img{
 <div class="row">
 <div class="col-md-4 col-lg-4 col-sm-12">
 <div class="polaroid">
-  <img src="assets/img/GoldenBlondeCornrowsBun.jpg" alt="Norway" class="img-rounded"style="width:300px; height:300px;">
+  <img  src="assets/img/plaiting.jpg" alt="Norway" class="img-rounded"style="width:300px; height:300px;">
   <div class="container_img">
-    <p class="services">Hair styling starting from ksh 1,000</p>
+    <p class="services">Hair plaiting starting from ksh 1,000</p>
   </div>
 </div>
 </div>
 
 <div class="col-md-4 col-lg-4 col-sm-12">
 <div class="polaroid">
-  <img src="assets/img/trimming2.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
+  <img src="assets/img/hairtrim.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
   <div class="container_img">
     <p class="services">Hair trimming starting from ksh 500</p>
   </div>
@@ -51,7 +51,7 @@ div.container_img{
 
 <div class="col-md-4 col-lg-4 col-sm-12">
 <div class="polaroid">
-  <img src="assets/img/haircoloring.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
+  <img src="assets/img/coloring2.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
   <div class="container_img">
     <p class="services">Hair coloring starting from ksh 500 </p>
   </div>
@@ -62,7 +62,7 @@ div.container_img{
 <div class="row">
 <div class="col-md-6 col-lg-6 col-sm-12">
 <div class="polaroid"style="margin-left:200px;">
-  <img src="assets/img/haircuts.jpg" alt="Norway" class="img-rounded" style="width:300px; height:300px;">
+  <img src="assets/img/haircut.jpg" alt="Norway" class="img-rounded" style="width:300px; height:300px;">
   <div class="container_img">
     <p class="services">Hair cuts starting from ksh 500</p>
   </div>
@@ -71,7 +71,7 @@ div.container_img{
 
 <div class="col-md-6 col-lg-6 col-sm-12">
 <div class="polaroid">
-  <img src="assets/img/blowdry2.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
+  <img src="assets/img/Blowdry2(2).jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
   <div class="container_img">
     <p class="services">Blow dry starting from Ksh 200</p>
   </div>
@@ -82,9 +82,9 @@ div.container_img{
 <div class="row">
 <div class="col-md-12 col-lg-12 col-sm-12">
 <div class="polaroid" style="margin-left:370px;">
-  <img src="assets/img/dreadlocks.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
+  <img src="assets/img/hairstyling2.jpg" alt="Norway" class="img-rounded" style="width:300px;height:300px;">
   <div class="container_img">
-    <p class="services">Northern Lights in Norway</p>
+    <p class="services">Hair Styling from Ksh 1,000</p>
   </div>
 </div>
 </div>

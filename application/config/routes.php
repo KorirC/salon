@@ -82,7 +82,6 @@ $route['gallery']='gallery_controller/index';
 // routes for booking
 $route['book']='booking';
 $route['makebook']='booking/book_service';
-$route['display_count']='booking/display_count';
 $route['accept/(:any)/(:any)']='checkbookings/accept_booking/$1/$2';
 $route['income/(:any)/(:any)']='checkbookings/insert_earning/$1/$2';
 $route['reject/(:any)']='checkbookings/reject_booking/$1';
