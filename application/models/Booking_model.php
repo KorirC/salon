@@ -25,18 +25,6 @@ class Booking_model extends CI_Model{
         return $result;
     }
     
-
-   
-   public function countbookings(){
-       $date=date('d');
-       $count=0;
-       for($i=1;$i<=$date;$i++){
-           $datepick=date('d'.$i);
-           $count+=$this->get_count($datepick);
-       }
-       return $count;
-   }
-    
 }
 
       

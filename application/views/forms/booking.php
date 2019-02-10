@@ -17,10 +17,26 @@
 }
 
 /* CHECKED STYLES */
-[type=radio]:checked + img {
+/* [type=radio]:checked + img {
   border: 1px solid black;
+  background-color:red;
   outline-style: solid;
   outline-color: coral;
+} */
+.radioButton input:checked ~ .image_option{
+  background-color:#717bd1 !important;
+  color:#717bd1 !important;
+  font-size:20px;
+  padding:10px;
+ }
+
+ .radioButton input:checked ~ .input_text{
+  color:#717bd1 !important;
+  font-size:30px;
+ }
+
+.image_option{
+  padding:20px;
 }
 </style>
 </head>
@@ -31,7 +47,7 @@
 $days=$bookings[0];
 $counts=$bookings[1];
  for($i=0;$i<sizeof($days);$i++){
-  echo "<div class='col-md-2'><div>".date("D",strtotime($days[$i]))."</div><br>".$days[$i]."<div><br><pre>".$counts[$i]."<br></div></div>";
+  echo "<div class='col-md-2'><div class=>".date("D",strtotime($days[$i]))."</div><br>".$days[$i]."<div><br><pre>".$counts[$i]."<br></div></div>";
  }
 ?>
 </div>
@@ -52,21 +68,21 @@ if(isset($message)){
 <!-- 1st row -->
 <div class="row" style="margin-left:140px;">
 <div class="col-md-4">
-<label>
-      <input type="radio" name="service" value="Hair cut" checked>Hair Cut<br>
-      <img src="assets/img/haircut.jpg">
+<label class="radioButton">
+      <input  type="radio" name="service" value="Hair cut" checked><h4 class="input_text">Hair Cut</h4><br>
+      <img class="image_option" src="assets/img/haircut.jpg">
     </label>
 </div>
 <div class="col-md-4">
-<label>
-      <input type="radio" name="service" value="Hair Coloring">Hair Coloring<br>
-      <img src="assets/img/coloring2.jpg">
+<label class="radioButton">
+      <input type="radio" name="service" value="Hair Coloring"><h4 class="input_text">Hair Coloring</h4><br>
+      <img class="image_option" src="assets/img/coloring2.jpg">
     </label>
 </div>
 <div class="col-md-4">
-<label>
-      <input type="radio" name="service" value="Blow dry">Blow dry<br>
-      <img src="assets/img/Blowdry2(2).jpg">
+<label class="radioButton">
+      <input type="radio" name="service" value="Blow dry"><h4 class="input_text">Blow dry</h4><br>
+      <img class="image_option" src="assets/img/Blowdry2(2).jpg">
     </label>
 </div>
 </div>
@@ -74,21 +90,21 @@ if(isset($message)){
 <!-- 2nd row -->
 <div class="row" style="margin-left:140px;">
 <div class="col-md-4" >
-<label>
-      <input type="radio" name="service" value="Hair styling">Hair Styling<br>
-      <img src="assets/img/hairstyling2.jpg">
+<label class="radioButton">
+      <input type="radio" name="service" value="Hair styling"><h4 class="input_text">Hair Styling</h4><br>
+      <img class="image_option" src="assets/img/hairstyling2.jpg">
     </label>
 </div>
 <div class="col-md-4">
-<label>
-      <input type="radio" name="service" value="Hair trimming">Hair Trimming<br>
-      <img src="assets/img/hairtrim.jpg">
+<label class="radioButton">
+      <input type="radio" name="service" value="Hair trimming"><h4 class="input_text">Hair Trimming</h4><br>
+      <img class="image_option" src="assets/img/hairtrim.jpg">
     </label>
 </div>
 <div class="col-md-4">
-<label>
-      <input type="radio" name="service" value="Hair plaiting">Hair Plaiting<br>
-      <img src="assets/img/plaiting.jpg">
+<label class="radioButton">
+      <input type="radio" name="service" value="Hair plaiting"><h4 class="input_text">Hair Plaiting</h4><br>
+      <img class="image_option" src="assets/img/plaiting.jpg">
     </label>
 </div>
 </div>

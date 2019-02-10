@@ -5,7 +5,7 @@
     <a href="<?php echo base_url();?>booking" class="btn btn-default" style="float:right;">Make An Appointment</a>
   </div>
 <!-- beginning of first row -->
-<div class="row" style=" background-color:#eee;">
+<div class="row">
     
    
     <!--column with image-->
@@ -20,13 +20,13 @@
 </div><br><br>
 <!-- end of first row -->
 <div class="container_home">
-<div class="row" style="padding-top:30px;">
+<div class="row" style="padding-top:30px;margin-left:50px;">
 <h2 style="text-align:center;FONT-FAMILY: -webkit-pictograph;">OUR SERVICES</h2>
     <div class="col-md-4 col-lg-4 col-sm-12">
     <img src="assets/img/cornrows.jpg" class="img-circle">
     <p>Floral Half Cornrows @4,000KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button" style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -34,7 +34,7 @@
     <img src="assets/img/GingerFeedInBraidsPonytail.jpg" class="img-circle" >
     <p>Ginger FeedIn Braids Ponytail @2,000KSH</p>
     <div>
-    <a class="button" style="position:relative;" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button" style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -42,16 +42,16 @@
     <img src="assets/img/dreadlocks.jpg" class="img-circle" >
     <p>Dreadlocks @2,000KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 </div>
-<div class="row" style="padding-top:30px;">
+<div class="row" style="padding-top:30px;margin-left:50px;">
     <div class="col-md-4 col-lg-4 col-sm-12">
     <img src="assets/img/CelticKnotCornrowsHeadband.jpg" class="img-circle" >
     <p>Celtic Knot Cornrows Headband @2,500KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -59,7 +59,7 @@
     <img src="assets/img/brazilian.jpg" class="img-circle" >
     <p>The wig brazilian human hair @3,000KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -67,17 +67,17 @@
     <img src="assets/img/dutchbraids.jpg" class="img-circle" >
     <p>Combined Cornrows Dutch Braids @1,500KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 </div>
 
-<div class="row" style="padding-top:30px;">
+<div class="row" style="padding-top:30px;margin-left:50px;">
     <div class="col-md-4 col-lg-4 col-sm-12">
     <img src="assets/img/fauxmohawk.jpg" class="img-circle" >
     <p>Faux-Mohawk @4,000KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -85,7 +85,7 @@
     <img src="assets/img/GoldenBlondeCornrowsBun.jpg" class="img-circle" >
     <p>Golden Blonde Cornrows Bun @1,800KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 
@@ -93,26 +93,9 @@
     <img src="assets/img/mixed.jpg" class="img-circle" >
     <p>Mixed Cornrows Mohawk @2,000KSH</p>
     <div>
-    <a class="button" href="<?php echo base_url();?>booking">Book Now</a>
+    <a class="button"  style="margin-left:30px;" href="<?php echo base_url();?>booking">Book Now</a>
     </div>
     </div>
 </div>
 </div>
 </div><br><br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Get In Touch</h3>
-            <p>We would love to hear from you about our services and how we can best improve them to suit your needs. Kindly give us  a feed back </p>
-        </div>
-        <div class="col-md-6">
-        <textarea name="your_message" cols="50" rows="7">
-
-        </textarea> <br>
-        <div>
-        <button type="submit" class="btn btn-default">Submit</button>
-        </div>
-        </div>
-    </div>
-   
-</div>

@@ -9,14 +9,14 @@ public function register_client(){
     $gender=$this->input->post('gender');
     $email=$this->input->post('email');
     $phone=$this->input->post('phoneno');
-    $level=$this->input->post('level');
+    // $level=$this->input->post('level');
     $password=$this->input->post('pwd');
     $comfirm_password=$this->input->post('cpwd');
 
     if($password===$comfirm_password){
         $count=$this->Client_model->check_exist($id);
         if($count<1){
-         $this->Client_model->insert_client($id,$name,$gender,$email,$phone,$level,$password);
+         $this->Client_model->insert_client($id,$name,$gender,$email,$phone,$password);
          $this->login();
         }else{
     
@@ -89,7 +89,7 @@ public function register_client(){
             }
         }else{
             echo $this->session->set_flashdata('msg','Username or Password is Wrong');
-            // redirect('login');
+            redirect('login');
         }
 
     }

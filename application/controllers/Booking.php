@@ -51,12 +51,6 @@ class Booking extends CI_Controller {
         $this->load->view('forms/booking',$msg);
         $this->load->view('templates/footer');
     }
-
-    // public function display_count(){
-    //     $this->Booking_model->countbookings();
-    //     $this->client_appointment();
-    // }
-
     //function to get booking from today and six more days
     public function get_next_booking(){
         $booking=array();

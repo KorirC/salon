@@ -59,13 +59,13 @@ if(isset($message)){
       <label for="phoneno">Phone number:</label>
       <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
     <select name="level">
         <option value="1" >Admin</option>
         <option value="2" >Client</option>
     </select>
       
-    </div>
+    </div> -->
 
      <div class="form-group">
     <label for="pwd">Password:</label>

@@ -67,7 +67,7 @@ $route['admin']='admin';
 $route['admin_bookings']='checkbookings/index';
 $route['filter_by_date']='checkbookings/filter_by_date';
 //feedback page
-$route['feedback']='adminfeedback/index';
+$route['feedback']='feedback_controller/enter_feedback';
 
 // $route['forms/admin_bookings']='forms/admin_bookings';
 

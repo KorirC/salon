@@ -2,14 +2,14 @@
 class Client_model extends CI_Model{
 
     //function to insert the client
-    public function insert_client($id,$name,$gender,$email,$phone,$level,$password){
+    public function insert_client($id,$name,$gender,$email,$phone,$password){
         $data=array(
             'id'=>$id,
             'name'=>$name,
             'gender'=>$gender,
             'email'=>$email,
             'phone_number'=>$phone,
-            'user_level'=>$level,
+            'user_level'=>"2",
             'password'=>$password
         );
  return $this->db->insert('client_table',$data);
