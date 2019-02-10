@@ -109,7 +109,7 @@
 
 /* custom admin nav bar css */
 .custom-nav{
-    color: #38397c !important;
+    color: #434470 !important;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -121,7 +121,7 @@
 }
 
 .text-theme-one{
-    color: #38397c !important;
+    color: #434470  !important;
     font-size: 20px;
 }
 
@@ -190,7 +190,7 @@
 }
 .navbar-nav a{
     font-family: -webkit-pictograph;
-    color:blue;
+    color:#434470 ;
     font-size: large;
 }
 
@@ -238,9 +238,20 @@
 .container-gallery:hover .overlay {
     opacity: 1;
 }
-.col-md-1{
-    background-color: rgb(14, 119, 119);
+.title_row .col-md-1{
+    color: rgb(14, 119, 119);
 }
-.col-md-2{
-    background-color: rgb(14, 119, 119);
+
+.title_row{
+    margin-top: 20px;
+background-color: rgb(233, 227, 227) !important;
+padding-left:20px;
+padding-top:20px;
+}
+.title_row h1{
+color:#434470;
+}
+
+.well{
+    background-color: white !important;
 }

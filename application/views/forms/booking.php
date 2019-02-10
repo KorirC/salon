@@ -42,14 +42,16 @@
 </head>
 <body>
 <div class="row">
-<h2 style="text-align:center;">Number Of Bookings This Week</h2>
+<div class=' well row title_row '>
+<h1 style="text-align:center;">Number Of Bookings This Week</h1>
 <?php 
 $days=$bookings[0];
 $counts=$bookings[1];
  for($i=0;$i<sizeof($days);$i++){
-  echo "<div class='col-md-2'><div class=>".date("D",strtotime($days[$i]))."</div><br>".$days[$i]."<div><br><pre>".$counts[$i]."<br></div></div>";
+  echo "<div class='col-md-1'><div class=>".date("D",strtotime($days[$i]))."</div><br>".$days[$i]."<div><br><pre class='well'>".$counts[$i]."<br></div></div>";
  }
 ?>
+</div>
 </div>
 
 </div>

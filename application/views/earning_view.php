@@ -4,6 +4,8 @@
 
 
 <div>
+
+<div class=' row title_row'>
 <h1>This week earning</h1>
 <?php 
 $days=$thisearngs[0];
@@ -11,16 +13,20 @@ $earnings=$thisearngs[1];
 $last_days=$lastearngs[0];
 $last_week_earnings=$lastearngs[1];
 $wk=$thisearngs[2];
+
  for($i=0;$i<sizeof($days);$i++){
   echo "<div class='col-md-1'><div>".date("D",strtotime($days[$i]))."</div>".$days[$i]."<div> <pre>  ".$earnings[$i]."</div></div>";
 
  }
 ?>
 </div>
+</div>
 
 <!-- this week earn earning -->
 
 <canvas id="thisWeekChart" width="400" height="200"></canvas>
+
+<div class=' row title_row'>
 <h1>Past Seven day earning</h1>
 <?php 
 for($i=0;$i<sizeof($last_days);$i++){
@@ -28,13 +34,16 @@ for($i=0;$i<sizeof($last_days);$i++){
   
    }
 ?>
+bar graph
+</div>
+
 <canvas id="lastWeekChart" width="400" height="200"></canvas>
 <script>
 var ctx = document.getElementById("thisWeekChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday,Sunday"],
+        labels: ["Sunday","Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"],
         datasets: [{
             label: '# of earnings',
             data: [
@@ -82,7 +91,7 @@ var ctx = document.getElementById("lastWeekChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday,Sunday"],
+        labels: ["Sunday","Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"],
         datasets: [{
             label: '# of earnings',
             data: [

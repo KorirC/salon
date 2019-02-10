@@ -17,7 +17,7 @@ class Earning extends  CI_Controller {
         $start_date=$this->last_week_range(date('Y-m-d'));
       for($count=0;$count<7;$count++){
            $i=$count;
-           $date=$this->addDayswithdate($start_date,$count+1);
+           $date=$this->addDayswithdate($start_date,$count+0);
           $earning=$this->sum_earning($this->Earning_model-> get_earning_by_date($date));
           array_push($earngs,$earning);
           array_push($days,$date);
@@ -35,7 +35,7 @@ public function get_thisWeek(){
    $start_date=$this->this_week_range();
  for($count=0;$count<7;$count++){
       $i=$count;
-     $date=$this->addDayswithdate($start_date,$count+1);
+     $date=$this->addDayswithdate($start_date,$count+0);
      $earning=$this->sum_earning($this->Earning_model-> get_earning_by_date($date));
      array_push($earngs,$earning);
      array_push($days,$date);
