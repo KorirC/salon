@@ -13,8 +13,6 @@ class Stylist_model extends CI_Model{
         );
  return $this->db->insert('stylist_table',$data);
     }
-
-     // function to check user exist
      public function check_exist($id){
         // $query=$this->db->get_where('stylist_table',array('id'=>$id));
         // $result=$query->result_array();

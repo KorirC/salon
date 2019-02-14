@@ -243,7 +243,7 @@
 }
 
 .title_row{
-    margin-top: 20px;
+margin-top: 20px;
 background-color: rgb(233, 227, 227) !important;
 padding-left:20px;
 padding-top:20px;
@@ -255,3 +255,22 @@ color:#434470;
 .well{
     background-color: white !important;
 }
+.well-lg{
+    background-color:aqua;
+}
+.textarea{
+    padding-top:10px;
+    margin-top:20px;
+}
+.feedback{
+    text-align:center;
+    font-family:-apple-system;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* add stylist page */
+.form-group{
+    margin-left: 50px;
+     font-family: -webkit-pictograph;
+ }
+ 

@@ -47,7 +47,7 @@ echo '
   echo '
   <ul class="nav navbar-nav navbar-right">
     
-    <li><a href="'.base_url().'/logout">logout</a></li>
+    <li><a href="'.base_url().'/logout"><span class="glyphicon glyphicon-log-out ">logout</a></li>
     </ul>
   
   '; 

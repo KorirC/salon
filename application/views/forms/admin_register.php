@@ -11,7 +11,7 @@
         </div>
 <div class="formcard">
 <?php echo validation_errors(); ?>
-<?php echo form_open('register'); ?>
+<?php echo form_open('admin_register'); ?>
 <?php 
 if(isset($message)){
   echo $message;
@@ -19,9 +19,7 @@ if(isset($message)){
 
 ?>
 <div class="register_top">
-      <h2>REGISTER</h2>
-    <P style="text-align:center;FONT-FAMILY: -webkit-pictograph;">
-    We aim to be your home from home,where you always feel special and welcome within our relaxed, <br> unhurried surroundings, all designed to ensure your total relaxation. </P>
+      <h2>Admin</h2>
  </div>
 
 

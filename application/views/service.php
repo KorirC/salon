@@ -29,7 +29,7 @@ div.container_img{
 </style>
 
 
-<h2>Our Services</h2>
+<div class="well well-lg" style="background-color:aqua;"><h2>Our Services</h2></div>
 <div class="row">
 <div class="col-md-4 col-lg-4 col-sm-12">
 <div class="polaroid">

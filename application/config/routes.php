@@ -57,7 +57,8 @@ $route['forms/gallery']='forms/gallery';
 $route['forms/services']='forms/services';
 
 //routes for admin checking stylists
-$route['delete_stylist/(:any)']='checkstylists/delete_stylist/$1';
+$route['update_stylist']='checkstylists/update';
+$route['delete_stylist/(:any)/(:any)']='checkstylists/delete_stylist/$1/$2';
 $route['admin_stylists']='checkstylists/index';
 $route['admin']='admin';
 
@@ -103,7 +104,9 @@ $route['404_override'] = '';
 // new routes
 $route['register']='client/register_client';
 $route['translate_uri_dashes'] = FALSE;
-
-
 // earning routes
 $route['earnings']='earning';
+//admin registry
+
+$route['admin_register']='adminreg_controller/register_client';
+$route['forms/admregister']='forms/admregister';

@@ -3,7 +3,7 @@
 					  STYLIST<hr>
         </div>
 
-<div class="formcard " style="padding-top:20px; background-color:white; font-size:initial;">
+<div class="container" ><!--  -->
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('addstylist'); ?>
@@ -18,9 +18,8 @@ if(isset($message)){
 
     <!--Beginning of row-->
     
-    <div class="row">
-    <div class="col-md-9 col-lg-9 col-sm-12">
-   
+    <div class="row" style="background-color:rgb(233, 227, 227); font-family:-webkit-pictograph; font-size:30px;">
+    <div class="col-md-6 col-lg-6 col-sm-12">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" name="name" placeholder="Enter name" required>
@@ -49,12 +48,12 @@ if(isset($message)){
 
     <div class="form-group">
       <label for="hairstyle">Hairstyle/s:</label>
-      <input type="int" class="form-control" name="hairstyle" placeholder="Enter the hairstle">
+      <input type="int" class="form-control" name="hairstyle" placeholder="Good in which hairstyle?">
     </div>
- 
-
-  <button type="submit" class="btn btn-default">Add stylist</button>
-  </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">Add stylist</button>  <a class="btn btn-default" href="<?=base_url('update_stylist');?>">Update</a>  <a class="btn btn-default" href="<?=base_url('admin_stylists');?>">Back</a>
+      </div>
+      </div>
 
   </div>
 </form>

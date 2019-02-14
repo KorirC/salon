@@ -13,9 +13,9 @@ class Stylist extends CI_Controller {
             if ($this->form_validation->run() == FALSE)
             {
                    
-                    $this->load->view('templates/header');
+                    $this->load->view('templates/adminheader');
                     $this->load->view('forms/stylist');
-                    $this->load->view('templates/footer');
+                    // $this->load->view('templates/footer');
             }
             else
             {
@@ -52,8 +52,8 @@ class Stylist extends CI_Controller {
     }
     public function stylist_adding(){
         $msg['message']='';
-        $this->load->view('templates/header');
+        $this->load->view('templates/adminheader');
         $this->load->view('forms/stylist',$msg);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
 }

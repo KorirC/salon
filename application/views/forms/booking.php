@@ -43,7 +43,7 @@
 <body>
 <div class="row">
 <div class=' well row title_row '>
-<h1 style="text-align:center;">Number Of Bookings This Week</h1>
+<h1 style="text-align:;">Number Of Bookings This Week</h1>
 <?php 
 $days=$bookings[0];
 $counts=$bookings[1];
@@ -65,10 +65,10 @@ if(isset($message)){
 }
 
 ?>
-<div class="form-group">
+<div class="container">
   <h2 style="text-align:center;">Book For Our Services</h2>
 <!-- 1st row -->
-<div class="row" style="margin-left:140px;">
+ <div class="row" ><!--style="margin-left:140px;"  -->
 <div class="col-md-4">
 <label class="radioButton">
       <input  type="radio" name="service" value="Hair cut" checked><h4 class="input_text">Hair Cut</h4><br>
@@ -90,7 +90,7 @@ if(isset($message)){
 </div>
 
 <!-- 2nd row -->
-<div class="row" style="margin-left:140px;">
+<div class="row" >
 <div class="col-md-4" >
 <label class="radioButton">
       <input type="radio" name="service" value="Hair styling"><h4 class="input_text">Hair Styling</h4><br>
@@ -110,26 +110,25 @@ if(isset($message)){
     </label>
 </div>
 </div>
-<div class="form-group" style="margin-left:400px; margin-right:400px;">
+<div class="row">
+<div class="col-md-9">
       <label for="date">Date:</label>
-      <input type="date" class="form-control" name="date" placeholder="Enter date" required>
+      <input type="date" style="width:70%;"class="form-control" name="date" placeholder="Enter date" required><br><button type="submit" class="btn btn-default">Submit</button>
     </div>
-  <div class="form-group"style="margin-left:600px;">
-  <button type="submit" class="btn btn-default">Submit</button>
-  </div>
-</div>  
-<div class="container">
+</div>
+</div>  <br>
+<div class="container" style="background-color: rgb(233, 227, 227);">
     <div class="row">
         <div class="col-md-6">
-            <h3>Get In Touch</h3>
-            <p>We would love to hear from you about our services and how we can best improve them to suit your needs. Kindly give us  a feed back </p>
+            <h3 style="text-align:center;" >Get In Touch</h3>
+            <p class="feedback">We would love to hear from you about our services and how we can best improve them to suit your needs. Kindly give us  a feed back </p>
         </div>
         <div class="col-md-6">
-        <textarea name="your_message" cols="50" rows="7">
+        <textarea name="your_message" cols="50" rows="7"class="textarea">
 
         </textarea> <br>
         <div>
-        <a class="btn btn-default" href="<?php echo base_url('feedback'); ?>">Submit</a>
+        <a class="btn btn-default" href="<?php echo base_url('feedback'); ?>">Send</a>
         </div>
         </div>
     </div>

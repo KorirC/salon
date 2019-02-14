@@ -7,6 +7,7 @@
 <li><a  class="button_well"href="<?php echo base_url();?>earnings"><span class="glyphicon glyphicon-stats"> <div>Earnings</div></a></li>
 <li><a  class="button_well" href="<?php echo base_url();?>admin_stylists"><span class="glyphicon glyphicon-user"><div>Stylist</div></a></li>
 <li><a  class="button_well" href="<?php echo base_url();?>admin_stylists"><span class="	glyphicon glyphicon-list"><div>Feedback</div></a></li>
+<a href="<?php echo base_url();?>admregister" class="btn btn-default" >Make Admin</a>
 </ul>
 
 </div>
