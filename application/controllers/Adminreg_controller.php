@@ -2,8 +2,41 @@
 
 class Adminreg_controller extends CI_Controller {
 
+    // index function
+    public function index(){
+           
+        $msg['message']='';
+        $this->load->view('templates/header');
+        $this->load->view('forms/admin_register',$msg);
+        $this->load->view('templates/footer');
+    }
+
 // function to register client
 public function register_client(){
+
+    $this->load->library('form_validation');
+
+    $this->form_validation->set_rules('idno', 'ID Number','required');
+    $this->form_validation->set_rules('name', 'Name','required');
+    $this->form_validation->set_rules('gender', 'Gender','required');
+    $this->form_validation->set_rules('email', 'Email','required');
+    $this->form_validation->set_rules('pwd', 'Password','required');
+    $this->form_validation->set_rules('cpwd', 'Password Confirmation','required');
+
+
+    if ($this->form_validation->run() == FALSE)
+    {
+        $msg['message']='';
+        $this->load->view('templates/header');
+        $this->load->view('forms/admin_register',$msg);
+        $this->load->view('templates/footer');
+    }
+    else
+    {
+       
+            
+    
+
     $id=$this->input->post('idno');
     $name=$this->input->post('name');
     $gender=$this->input->post('gender');
@@ -12,6 +45,8 @@ public function register_client(){
     // $level=$this->input->post('level');
     $password=$this->input->post('pwd');
     $comfirm_password=$this->input->post('cpwd');
+
+   
 
     if($password===$comfirm_password){
         $count=$this->Adminreg->check_exist($id);
@@ -26,7 +61,7 @@ public function register_client(){
     }else{
        echo ("Passwords do not much");
     }
-
+    }
 }
 // function to return to same page
     private function return_register($message){
