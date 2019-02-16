@@ -114,22 +114,27 @@ if(isset($message)){
 <div class="row">
 <div class="col-md-9">
       <label for="date">Date:</label>
-      <input type="date" style="width:70%;"class="form-control" name="date" placeholder="Enter date" required><br><button type="submit" class="btn btn-default">Submit</button>
+      <input type="date" style="width:70%;"class="form-control" name="date" placeholder="Enter date" required><br>
+      <button type="submit" class="btn btn-default">Submit</button>
     </div>
 </div>
 </div>  <br>
+</form>
 <div class="container" style="background-color: rgb(233, 227, 227);">
     <div class="row">
         <div class="col-md-6">
             <h3 style="text-align:center;" >Get In Touch</h3>
             <p class="feedback">We would love to hear from you about our services and how we can best improve them to suit your needs. Kindly give us  a feed back </p>
         </div>
+
         <div class="col-md-6">
+        <?php echo form_open('feedback'); ?>
         <textarea id="client_feedback" name="your_message" cols="50" rows="7"class="textarea">
 
         </textarea> <br>
         <div>
-        <a class="btn btn-default" href="<?php echo base_url('feedback'); ?>">Send</a>
+        <button type="submit" class="btn btn-default">Send</button>
+        </form>
         </div>
         </div>
     </div>
