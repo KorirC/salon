@@ -1,9 +1,3 @@
-<html>
-<head>
-<title>Form</title>
-<link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
-</head>
-<body>
 <div class="bg-img"> 
 <div class="formcard_login" >
 <?php echo validation_errors(); ?>
@@ -23,12 +17,7 @@
     <label for="pwd">Password:</label>
     <input type="password" class="form-control" name="pwd">
   </div>
-
-
-
   <button type="submit" class="btn-login btn-default">Submit</button>
 </form>
 </div>
 </div>
-</body>
-</html>

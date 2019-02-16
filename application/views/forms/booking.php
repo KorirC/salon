@@ -41,6 +41,7 @@
 </style>
 </head>
 <body>
+<a href="#client_feedback" style="font-size:20px;float:right;">Give Us Your Feedback</a>
 <div class="row">
 <div class=' well row title_row '>
 <h1 style="text-align:;">Number Of Bookings This Week</h1>
@@ -124,7 +125,7 @@ if(isset($message)){
             <p class="feedback">We would love to hear from you about our services and how we can best improve them to suit your needs. Kindly give us  a feed back </p>
         </div>
         <div class="col-md-6">
-        <textarea name="your_message" cols="50" rows="7"class="textarea">
+        <textarea id="client_feedback" name="your_message" cols="50" rows="7"class="textarea">
 
         </textarea> <br>
         <div>

@@ -6,9 +6,9 @@ class Adminreg_controller extends CI_Controller {
     public function index(){
            
         $msg['message']='';
-        $this->load->view('templates/header');
+        $this->load->view('templates/adminheader');
         $this->load->view('forms/admin_register',$msg);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
 
 // function to register client
@@ -27,9 +27,9 @@ public function register_client(){
     if ($this->form_validation->run() == FALSE)
     {
         $msg['message']='';
-        $this->load->view('templates/header');
+        $this->load->view('templates/adminheader');
         $this->load->view('forms/admin_register',$msg);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
     else
     {
@@ -66,16 +66,16 @@ public function register_client(){
 // function to return to same page
     private function return_register($message){
         $msg['message']=$message;
-        $this->load->view('templates/header');
-        $this->load->view('forms/admregister',$msg);
-        $this->load->view('templates/footer');
+        $this->load->view('templates/adminheader');
+        $this->load->view('forms/admin_register',$msg);
+        // $this->load->view('templates/footer');
     }
     // route to login page
     public function login(){
         $msg['message']='';
-        $this->load->view('templates/header');
+        $this->load->view('templates/adminheader');
         $this->load->view('forms/login',$msg);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
     // login user
     public function auth_user(){
@@ -116,9 +116,9 @@ public function register_client(){
     //return user to login page
     private function return_login($message){
         $msg['message']=$message;
-        $this->load->view('templates/header');
+        $this->load->view('templates/adminheader');
         $this->load->view('forms/login',$msg);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
     // function to logout
     public function logout(){

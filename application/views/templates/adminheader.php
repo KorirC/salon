@@ -28,7 +28,7 @@
 if(empty($this->session->userdata("userid"))){
 echo '
 <ul class="nav navbar-nav navbar-right">
-  <li><a class="text-theme-one" href="'.base_url().'forms">Sign Up</a></li>
+  <li><a class="text-theme-one" href="'.base_url().'admin_register">Sign Up</a></li>
   <li><a class="text-theme-one" href="'.base_url().'login"><span class="glyphicon glyphicon-log-in "> Log In</a></li>
  
   </ul>
@@ -37,7 +37,7 @@ echo '
 }else{
   echo '
   <ul class="nav navbar-nav navbar-right">
-    
+    <li><a href="'.base_url().'admin_register" class="btn btn-default" >Make Admin</a></li>
     <li><a href="'.base_url().'/logout">logout</a></li>
     </ul>
   

@@ -63,15 +63,15 @@
       border-radius: 20px;
 }
 .container_home{
-    background-image: url("../img/salon.jpg");
+    /* background-image: url("../img/salon.jpg"); */
     min-height: 380px;
-    color:brown;
+    color:black;
     /* Center and scale the image nicely */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    /* background-color: rgba(130, 151, 172, 0.336); */
+    position: relative; */
+    background-color: rgba(130, 151, 172, 0.336);
 }
 .form-group-register{
    margin-left: 30px;

@@ -68,21 +68,7 @@ public function register_client(){
         $phone=$this->input->post('phoneno');
         $password=$this->input->post('pwd');
         $users= $this->Client_model->login($phone,$password);
-
-
-        // if(!empty($users)){
         
-        //     //do something 
-        //       //save the logged in user
-        //     $this->session->set_userdata("userid",$users['id']);
-         
-        //     redirect("home");
-          
-            
-        // }else{
-        //     $this->return_login("wrong credentials");
-        // }
-
         if($users->num_rows() > 0){
             $data  = $users->row_array();
             $phone = $data['phone_number'];
