@@ -38,7 +38,8 @@
             <td><?php echo $row->phone_number;?></td>
             <td><?php echo $row->hairstyle;?></td> 
             <td><a class="btn btn-default" href="<?=base_url('delete_stylist/'). $row->auto."/".$row->id ;?>">Delete</a> </td> 
-
+            <td><a href="<?=base_url('updatestylist/'). $row->auto;?>">Update</a></td>";
+            
       
             </tr>  
      
@@ -47,7 +48,7 @@
     </tbody>
   </table>
   <a class="btn btn-default" href="<?=base_url('addstylist');?>">Add Stylist</a>
-  <a class="btn btn-default" href="<?=base_url('addstylist');?>">Update Stylist</a>
+  <!-- <a class="btn btn-default" href="<?=base_url('addstylist');?>">Update Stylist</a> -->
 </div>
 
 </body>

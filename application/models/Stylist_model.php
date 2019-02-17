@@ -20,17 +20,4 @@ class Stylist_model extends CI_Model{
         // $result=$query->result_array();
         // return sizeof($result);
     }
-    // function to update stylist
-	public function edit_stylist($name,$id,$gender,$email,$phone,$hairstyle){
-		$array = array(
-			'name' => $name,
-			'gender'=>$gender,
-            'email'=>$email,
-            'phone_number'=>$phone,
-            'hairstyle'=>$hairstyle
-		  );
-          $this->db->set($array);
-          $this->db->where('id', $id);
-            $this->db->insert('stylist_table');
-	}
 }
