@@ -139,6 +139,3 @@ if(isset($message)){
         </div>
     </div>
 </div>
-<div>
-<h1>Graphical booking</h1>
-</div>

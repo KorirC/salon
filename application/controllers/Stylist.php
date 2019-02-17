@@ -46,11 +46,24 @@ class Stylist extends CI_Controller {
         }
 
     }
+    // function to add
     public function stylist_adding(){
         $msg['message']='';
         $this->load->view('templates/adminheader');
         $this->load->view('forms/stylist',$msg);
         // $this->load->view('templates/footer');
     }
+    // update
+    public function stylist_update(){
+        $name=$this->input->post('name');
+        $id=$this->input->post('idno');
+        $gender=$this->input->post('gender');
+        $email=$this->input->post('email');
+        $phone=$this->input->post('phoneno');
+        $hairstyle=$this->input->post('hairstyle');
 
-}
+        $this->Stylist_model->edit_stylist($name,$id,$gender,$email,$phone,$hairstyle);
+        $this->stylist_adding();
+        
+    }
+}?>

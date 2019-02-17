@@ -73,7 +73,7 @@ $route['feedback']='feedback_controller/enter_feedback';
 // $route['forms/admin_bookings']='forms/admin_bookings';
 
 // routes for stylist
-$route['addstylist']='stylist/recruit_stylist';
+$route['addstylist']='stylist/index';
 
 //service page
 $route['service']='service_controller/index';
@@ -106,7 +106,12 @@ $route['register']='client/register_client';
 $route['translate_uri_dashes'] = FALSE;
 // earning routes
 $route['earnings']='earning';
-//admin registry
 
+//admin registry
 $route['admin_register']='adminreg_controller/register_client';
 $route['forms/admregister']='forms/admregister';
+
+$route['update_stylist']='stylist/stylist_update';
+//feedback
+$route['admin_feedback']='checkfeedback/index';
+$route['read/(:any)']='checkfeedback/read_message/$1';
