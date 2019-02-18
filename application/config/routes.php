@@ -59,7 +59,7 @@ $route['forms/services']='forms/services';
 //routes for admin checking stylists
 // $route['forms/updatestylist']='checkstylists/updatedata';
 $route['updatestylist/(:any)']='checkstylists/updatedata/$1';
-$route['delete_stylist/(:any)/(:any)']='checkstylists/delete_stylist/$1/$2';
+$route['delete_stylist/(:any)']='checkstylists/delete_stylist/$1';
 $route['admin_stylists']='checkstylists/index';
 $route['admin']='admin';
 
@@ -110,7 +110,7 @@ $route['earnings']='earning';
 $route['admin_register']='adminreg_controller/register_client';
 $route['forms/admregister']='forms/admregister';
 
-$route['update_stylist']='stylist/stylist_update';
+$route['update_stylist/(:any)']='stylist/stylist_update/$1';
 //feedback
 $route['admin_feedback']='checkfeedback/index';
 $route['read/(:any)']='checkfeedback/read_message/$1';

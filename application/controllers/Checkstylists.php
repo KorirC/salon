@@ -21,22 +21,31 @@ class Checkstylists extends CI_Controller {
         $this->index();
       }
       // function to update
-      public function updatedata(){
-      $id=$this->input->get('auto');
+      public function updatedata($id){ 
+        
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('name', 'Name','required');
+        $this->form_validation->set_rules('gender', 'Gender','required');
+        $this->form_validation->set_rules('email', 'Email','required');
+    
+    
+        if ($this->form_validation->run() == FALSE)
+        {
       $result['data']=$this->Admstylists->displayrecordsById($id);
       $this->load->view('templates/adminheader');
       $this->load->view('templates/topmenu');
       $this->load->view('forms/updatestylist',$result);
-      
-		if($this->input->post('update'))
-		{
+        }
+        else
+        {
 		$name=$this->input->post('name');
 		$gender=$this->input->post('gender');
     $email=$this->input->post('email');
     $phone_number=$this->input->post('phoneno');
     $hairstyle=$this->input->post('hairstyle');
     $this->Admstylists->update_records($name,$gender,$email,$phone_number,$hairstyle,$id);
-    redirect('updatestylist');
+    // redirect('admin_stylists');
 		// echo "Date updated successfully !”;
 		}
 	}

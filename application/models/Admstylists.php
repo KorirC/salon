@@ -8,14 +8,12 @@ class Admstylists extends CI_Model{
 
 // function to delete the stylist
 	function delete_stylist($id){
-	return $this->db->delete('stylist_table', array('auto'=>$id)); 
+	return $this->db->delete('stylist_table', array('id'=>$id)); 
 	}
 // display records by ID	
 	function displayrecordsById($id)
 	{
-		// $query=$this->db->query("select * from stylist_table");
-		// return $query->result();
-		$query=$this->db->get_where('stylist_table',array('auto'=>$id));
+		$query=$this->db->get_where('stylist_table',array('id'=>$id));
 		return $query->result();
 	}
 // do the update
@@ -25,16 +23,15 @@ class Admstylists extends CI_Model{
 			'name'=> $name,
 			'gender'=>$gender,
 			'email'=>$email,
-			'phoneno'=>$phone_number,
+			'phone_number'=>$phone_number,
 			'hairstyle'=>$hairstyle
 		);
-		$this->db->set($array);
-		$this->db->where(array('auto',$id));
-		$this->db->update('stylist_table');
-	
 		
-		// $where=array('auto'=>$id);
-		// $this->db->insert('stylist_table',$array,$where);
+		echo $id;
+		var_dump($array);
+		$this->db->where('id',$id);
+		$this->db->update('stylist_table',$array);
+
 	}
  }	 
 ?>

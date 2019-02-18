@@ -1,6 +1,6 @@
 
-<?php echo form_open('updatestylist'); ?>
- <?php
+<?php echo form_open('updatestylist/'.$data[0]->id); 
+ 
   foreach($data as $row)
   {
   ?>
