@@ -27,8 +27,8 @@ class Admstylists extends CI_Model{
 			'hairstyle'=>$hairstyle
 		);
 		
-		echo $id;
-		var_dump($array);
+		// echo $id;
+		// var_dump($array);
 		$this->db->where('id',$id);
 		$this->db->update('stylist_table',$array);
 

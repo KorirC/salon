@@ -45,7 +45,7 @@ class Checkstylists extends CI_Controller {
     $phone_number=$this->input->post('phoneno');
     $hairstyle=$this->input->post('hairstyle');
     $this->Admstylists->update_records($name,$gender,$email,$phone_number,$hairstyle,$id);
-    // redirect('admin_stylists');
+    redirect('admin_stylists');
 		// echo "Date updated successfully !”;
 		}
 	}

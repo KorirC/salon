@@ -68,12 +68,14 @@ if(isset($message)){
     <label for="pwd">Password Confirmation:</label>
     <input type="password" class="form-control" name="cpwd">
   </div>
-
-  <button type="submit" class="btn btn-default">Submit</button>
+<div class="form-group">
+  <button type="submit" class="btn btn-success">Submit</button>
+  </div>
   </div>
   </div>
 </form>
 
-</div>
-</body>
-</html>
+ </div>
+ <br>
+<!-- </body>
+</html>  -->
