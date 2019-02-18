@@ -34,7 +34,6 @@ for($i=0;$i<sizeof($last_days);$i++){
   
    }
 ?>
-bar graph
 </div>
 
 <canvas id="lastWeekChart" width="400" height="200"></canvas>

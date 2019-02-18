@@ -4,10 +4,10 @@ class Stylist extends CI_Controller {
     public function index(){
 
             $this->form_validation->set_rules('name', 'Name', 'required');
-            $this->form_validation->set_rules('id', 'ID Number', 'required');
+            $this->form_validation->set_rules('id', 'ID Number', 'xss_clean');
             $this->form_validation->set_rules('gender', 'Gender', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required');
-            $this->form_validation->set_rules('phone_number', 'Phone Number', 'required');
+            $this->form_validation->set_rules('phone_number', 'Phone Number', 'xss_clean');
             $this->form_validation->set_rules('hairstyle', 'Hairstyle/s', 'required');
        
             if ($this->form_validation->run() == FALSE)
@@ -19,12 +19,6 @@ class Stylist extends CI_Controller {
             }
             else
             {
-                $this->Stylist_model->recruit();
-                        redirect('stylist');
-            }
-    }
-//making appointments/ booking 
-    public function recruit_stylist(){
         
         $name=$this->input->post('name');
         $id=$this->input->post('idno');
@@ -42,9 +36,9 @@ class Stylist extends CI_Controller {
          $this->stylist_adding();
         }else{
     
-            $this->return_page("A user with the same id exist");
+            echo("A user with the same id exist");
         }
-
+        }
     }
     // function to add
     public function stylist_adding(){
@@ -53,17 +47,6 @@ class Stylist extends CI_Controller {
         $this->load->view('forms/stylist',$msg);
         // $this->load->view('templates/footer');
     }
-    // update
-    public function stylist_update(){
-        $name=$this->input->post('name');
-        $id=$this->input->post('idno');
-        $gender=$this->input->post('gender');
-        $email=$this->input->post('email');
-        $phone=$this->input->post('phoneno');
-        $hairstyle=$this->input->post('hairstyle');
-
-        $this->Stylist_model->edit_stylist($name,$id,$gender,$email,$phone,$hairstyle);
-        $this->stylist_adding();
         
     }
-}?>
+?>

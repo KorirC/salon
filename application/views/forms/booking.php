@@ -41,7 +41,7 @@
 </style>
 </head>
 <body>
-<a href="#client_feedback" style="font-size:20px;float:right;">Give Us Your Feedback</a>
+<a href="#client_feedback" style="font-size:20px;float:right;">Give Us Feedback</a>
 <div class="row">
 <div class=' well row title_row '>
 <h1 style="text-align:;">Number Of Bookings This Week</h1>
@@ -136,6 +136,9 @@ if(isset($message)){
         <button type="submit" class="btn btn-default">Send</button>
         </form>
         </div>
+       
         </div>
+      
     </div>
 </div>
+<br>

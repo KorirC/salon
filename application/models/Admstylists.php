@@ -13,25 +13,28 @@ class Admstylists extends CI_Model{
 // display records by ID	
 	function displayrecordsById($id)
 	{
-		$query=$this->db->query("select * from stylist_table");
+		// $query=$this->db->query("select * from stylist_table");
+		// return $query->result();
+		$query=$this->db->get_where('stylist_table',array('auto'=>$id));
 		return $query->result();
-	// $this->db->select('*')->from('stylist_table')->where('auto',$id);
-	// $query = $this->db->get();
-	// return $query->result();
 	}
 // do the update
-	function update_records($name,$id,$gender,$email,$phone_number,$hairstyle)
+	function update_records($name,$gender,$email,$phone_number,$hairstyle,$id)
 	{
 		$array=array(
 			'name'=> $name,
-			'idno'=> $id,
 			'gender'=>$gender,
 			'email'=>$email,
 			'phoneno'=>$phone_number,
 			'hairstyle'=>$hairstyle
 		);
-		$where=array('auto'=>$id);
-		$this->db->update('stylist_table',$array,$where);
+		$this->db->set($array);
+		$this->db->where(array('auto',$id));
+		$this->db->update('stylist_table');
+	
+		
+		// $where=array('auto'=>$id);
+		// $this->db->insert('stylist_table',$array,$where);
 	}
  }	 
 ?>

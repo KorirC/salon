@@ -51,7 +51,7 @@ if(isset($message)){
       <input type="int" class="form-control" name="hairstyle" placeholder="Good in which hairstyle?">
     </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-default">Add stylist</button>  <a class="btn btn-default" href="<?=base_url('update_stylist');?>">Update</a>  <a class="btn btn-default" href="<?=base_url('admin_stylists');?>">Back</a>
+        <button type="submit" class="btn btn-default">Submit</button>  <a class="btn btn-default" href="<?=base_url('update_stylist');?>">Update</a>  <a class="btn btn-default" href="<?=base_url('admin_stylists');?>">Back</a>
       </div>
       </div>
 
