@@ -1,3 +1,4 @@
+
 <div class="bg-img"> 
 <div class="formcard_login" >
 <?php echo validation_errors(); ?>
@@ -17,7 +18,11 @@
     <label for="pwd">Password:</label>
     <input type="password" class="form-control" name="pwd">
   </div>
+  <div class="form-group">
   <button type="submit" class="btn-login btn-default">Submit</button>
+  </div>
+  </div>
 </form>
 </div>
 </div>
+

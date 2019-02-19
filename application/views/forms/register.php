@@ -72,10 +72,12 @@ if(isset($message)){
   <button type="submit" class="btn btn-success">Submit</button>
   </div>
   </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </form>
+<div>
 
- </div>
- <br>
-<!-- </body>
-</html>  -->
+ 
