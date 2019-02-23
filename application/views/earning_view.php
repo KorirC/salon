@@ -6,7 +6,7 @@
 <div>
 
 <div class=' row title_row'>
-<h1>This week earning</h1>
+<h1>This week's earnings</h1>
 <?php 
 $days=$thisearngs[0];
 $earnings=$thisearngs[1];
@@ -27,7 +27,7 @@ $wk=$thisearngs[2];
 <canvas id="thisWeekChart" width="400" height="200"></canvas>
 
 <div class=' row title_row'>
-<h1>Past Seven day earning</h1>
+<h1>Past Seven day earnings</h1>
 <?php 
 for($i=0;$i<sizeof($last_days);$i++){
     echo "<div class='col-md-1'><div>".date("D",strtotime($days[$i]))."</div>".$last_days[$i]."<div> <pre>  ".$last_week_earnings[$i]."</div></div>";
