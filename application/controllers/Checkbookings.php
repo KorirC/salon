@@ -62,5 +62,22 @@ class Checkbookings extends CI_Controller {
             redirect('admin_bookings');
           }
 
+          //add product
+          public function insert_product(){
+            $this->load->library('form_validation');
+
+            $this->form_validation->set_rules('product', 'Product','required');
+            if ($this->form_validation->run() == FALSE)
+            {
+              redirect('admin_bookings');
+            }else{
+              $product=$this->input->post('product');
+              $amount=$this->input->post('amount');
+              $this->Products_model->insert_earning($product,$amount);
+              redirect('admin_bookings');
+            }
+           
+          }
+
 
 }

@@ -81,9 +81,15 @@ input[type=text]{
   <?php echo form_open('hairproducts'); ?>
       <!-- <label for="amount">Enter the amount:</label> -->
       <div class="form-group" id="products_bought">
-          <input type="text" class="form-control" name="hairproduct" placeholder="Enter type of hairproduct bought" required><br>
+          <label>Product:</label>
+          <input type="text" class="form-control" name="product" placeholder="Enter type of hairproduct bought" required><br>
+          <label>Amount:</label>
           <input type="number" class="bt nbtn btn-default" name="amount" placeholder="Enter amount" required><br>
-          <button type="submit" class="btn btn-success">Submit</button>
+          
+        </div>
+        <div class="form-group">
+        <label></label>
+        <button type="submit" class="btn btn-success">Submit</button>
         </div>
     </form>
     </div>

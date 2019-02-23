@@ -105,6 +105,9 @@ $route['register']='client/register_client';
 $route['translate_uri_dashes'] = FALSE;
 // earning routes
 $route['earnings']='earning';
+//hairproducts earnigs
+$route['hairproducts']='products';
+$route['hairproducts']='checkbookings/insert_product';
 
 //admin registry
 $route['admin_register']='adminreg_controller/register_client';
