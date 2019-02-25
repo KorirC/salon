@@ -1,3 +1,59 @@
+
+<!-- <script type="text/javascript">
+            $(document).ready(function() {
+
+                $("view_data").click(function() {
+                    var title = "RP";
+                    var type = "AM";
+                    var date_cal = $(this).attr("id");
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '<?php echo site_url(); ?>/my_calendar/get_reservations_records',
+                        data: "type=" + type + "&title=" + title + "&date_cal=" + date_cal,
+                        success: function(msg) {
+                            //alert(msg);
+                            $('#reservation_detail_model_body').html(msg);
+                            $('#reservation_detail_model').modal('show');
+
+                        },
+                        error: function(msg) {
+                            alert("Error Occured!");
+                        }
+                    });
+                });
+
+            });
+
+        </script> -->
+        <!-- <div id="container">
+
+            <div id="body">
+                <?php echo $home; ?>
+                
+            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="reservation_detail_model" class="modal fade" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button aria-hidden="true" data-dismiss="modal" class="close" type="button">x</button>
+                            <h4 class="modal-title">My Details</h4>
+                        </div>
+                        <div class="modal-body" id="reservation_detail_model_body">
+                            <!--reservation_list_view goes here-->
+<!-- 
+
+                        </div>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btn btn-info" type="button">Close</button>
+                        </div>
+                    </div>
+         </div>    -->
+
+
+
+
+
+
 <div class="container">
   <div class="jumbotron" >
     <h1 style="text-align: center; font-family: auto;

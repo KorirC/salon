@@ -3,6 +3,8 @@
 <title>Wahu Salon</title>
 <script src="<?php echo base_url("assets/css/Chart.min.js"); ?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
 <!-- <link href="<?php echo base_url("assets/js/bootstrap.min.js"); ?>" rel="stylesheet" type="text/css" /> -->
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
