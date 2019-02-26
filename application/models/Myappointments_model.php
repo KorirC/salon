@@ -10,7 +10,7 @@ class Myappointments_model extends CI_Model{
     
     //function to cancel appointment
     function cancel_appointment($id){
-        return $this->db->delete('booking_table',array("status"=>'waiting','id'=>$id));
+        return $this->db->delete('booking_table',array('id'=>$id,"status"=>'waiting'));
 
     }
 }?>

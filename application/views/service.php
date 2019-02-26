@@ -12,19 +12,20 @@ div.polaroid {
 }
 
 div.container {
-  /* width:50%;	 */
   text-align: center;
-  /* padding: 10px 20px; */
+
 }
 div.container_img{
 	width: 300px;
 	 
 }
 .services{
-	margin: 0 0 10px;
-    font-weight: bolder;
-    font-size: x-large;
+	  margin: 0 0 10px;
+    font-size: 20px;
     font-family: -webkit-pictograph;
+}
+.well-lg{
+  background-color:aqua;
 }
 </style>
 

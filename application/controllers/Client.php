@@ -61,7 +61,7 @@ public function register_client(){
         $msg['message']='';
         $this->load->view('templates/header');
         $this->load->view('forms/login',$msg);
-        $this->load->view('templates/footer');
+        // $this->load->view('templates/footer');
     }
     // login user
     public function auth_user(){

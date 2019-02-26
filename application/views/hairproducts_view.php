@@ -35,7 +35,7 @@ for($i=0;$i<sizeof($last_days);$i++){
 <script>
 var ctx = document.getElementById("thisWeekChart").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'pie',
     data: {
         labels: ["Sunday","Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"],
         datasets: [{
@@ -83,7 +83,7 @@ var myChart = new Chart(ctx, {
 // last week
 var ctx = document.getElementById("lastWeekChart").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'pie',
     data: {
         labels: ["Sunday","Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"],
         datasets: [{
