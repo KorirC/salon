@@ -76,6 +76,9 @@ $route['cancel/(:any)']='checkappointments/cancel/$1';
 // routes for stylist
 $route['addstylist']='stylist/index';
 
+// hairproducts page
+$route['products']='hairproducts_controller/index';
+
 //service page
 $route['service']='service_controller/index';
 
