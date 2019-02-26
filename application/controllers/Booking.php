@@ -12,23 +12,11 @@ class Booking extends CI_Controller {
     }
     public function index(){
             $this->is_logged_in();
-            // $this->form_validation->set_rules('name', 'Name', 'required');
-            // $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-            // $this->form_validation->set_rules('id', 'ID Number', 'required|is_unique[salon.id]|min_length[10]');
-            // $this->form_validation->set_rules('phone_number', 'Phone Number', 'required|max_length[10]');
-       
-            // if ($this->form_validation->run() == FALSE)
-            // {
+           
                     $bookings['bookings']=$this->get_next_booking();
                     $this->load->view('templates/header');
                     $this->load->view('forms/booking',$bookings);
                     $this->load->view('templates/footer');
-            // }
-            // else
-            // {
-            //     $this->Booking_model->appointment();
-            //             redirect('book');
-            // }
     }
 
   
