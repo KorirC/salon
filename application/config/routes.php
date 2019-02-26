@@ -68,8 +68,10 @@ $route['admin_bookings']='checkbookings/index';
 $route['filter_by_date']='checkbookings/filter_by_date';
 //feedback page
 $route['feedback']='feedback_controller/enter_feedback';
+// personal details
+$route['myappointments']='checkappointments/index';
+$route['cancel']='checkappointments/cancel';
 
-// $route['forms/admin_bookings']='forms/admin_bookings';
 
 // routes for stylist
 $route['addstylist']='stylist/index';
@@ -85,7 +87,6 @@ $route['makebook']='booking/book_service';
 $route['accept/(:any)/(:any)']='checkbookings/accept_booking/$1/$2';
 $route['income/(:any)/(:any)']='checkbookings/insert_earning/$1/$2';
 $route['reject/(:any)']='checkbookings/reject_booking/$1';
-// $route['forms/booking']='forms/booking';
 
 //routes for login
 $route['auth_client']='client/auth_user';

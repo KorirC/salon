@@ -7,15 +7,6 @@ class Checkbookings extends CI_Controller {
         $this->load->view('templates/topmenu');
         $this->load->view('forms/admin_bookings',$data);
       }  
-      
-      public function displaydata()
-      {
-      $data['bookings']=$this->Admbookings->display_records();
-      $this->load->view('templates/adminheader');
-      $this->load->view('templates/topmenu');
-      $this->load->view('forms/admin_bookings',$data);
-      
-      }
 
         //function to filter booking by date
         public function filter_by_date(){
