@@ -70,7 +70,7 @@ $route['filter_by_date']='checkbookings/filter_by_date';
 $route['feedback']='feedback_controller/enter_feedback';
 // personal details
 $route['myappointments']='checkappointments/index';
-$route['cancel/(:any)']='checkappointments/cancel/$1';
+$route['cancel']='checkappointments/cancel';
 
 
 // routes for stylist
@@ -110,7 +110,7 @@ $route['translate_uri_dashes'] = FALSE;
 // earning routes
 $route['earnings']='earning';
 //hairproducts earnigs
-$route['hairproducts']='products';
+$route['hairproducts_income']='products';
 $route['hairproducts']='checkbookings/insert_product';
 
 //admin registry

@@ -1,18 +1,27 @@
 <?php
 
 class Checkappointments extends CI_Controller {
+
+  //check if the user is logged in
+  private function is_logged_in(){
+    $id=$this->session->userdata('userid');
+    if(!isset($id)){
+        // this user is not logged in
+
+        redirect('login');
+
+    }
+  }
+  
+  // display records
     public function index(){  
-        if(count()<0){
+      $this->is_logged_in();
+      
         $id=$this->session->userdata('userid');
         $name=$this->session->userdata('username');
         $data['appointments']=$this->Myappointments_model->displayrecordsById($id);
         $this->load->view('templates/header');
         $this->load->view('forms/myappointments',$data);
-
-        }else{
-            echo 'No Appointments Made';
-        }
-        
       }
       
           //function to cancel appointment
