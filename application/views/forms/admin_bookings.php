@@ -26,7 +26,25 @@ input[type=text]{
 </style>
 </head>
 <body>
-<a href="#products_bought" style="font-size:20px;float:right;">Products Bought</a>
+<div class="container">
+<?php echo form_open('upload_image'); ?>
+
+<div class="form-group">
+    <label>Details</label>
+    <input type="text"  name="details"  class="form-control"placeholder="Enter the description of service">
+</div>
+
+<div class="form-group">
+    <input type="file" name="userfile" size="20">
+</div>
+<div class="form-group">
+<input type="submit" value="upload" />
+<!-- <button type="submit" class="btn btn-default">Submit</button> -->
+<!-- <a class="btn btn-default" href="<?php echo base_url('upload_image')?>">Submit</a> -->
+<div>
+</form>
+</div>
+
 <div class="container">
   <h2>Appointments Made</h2>
   <div class="rightfloat">
@@ -73,13 +91,13 @@ input[type=text]{
   </table>
 </div>
 
-<div class="container">
+<!-- <div class="container">
   <h2 style="text-align:center;">Hair Products Bought</h2>
   <br><br>
   <div class="container">
   
   <?php echo form_open('hairproducts'); ?>
-      <!-- <label for="amount">Enter the amount:</label> -->
+    
       <div class="form-group" id="products_bought">
           <label>Product:</label>
           <input type="text" class="form-control" name="product" placeholder="Enter type of hairproduct bought" required><br>
@@ -94,7 +112,7 @@ input[type=text]{
     </form>
     </div>
   
-</div>
+</div> -->
 </body>
 </html>
 

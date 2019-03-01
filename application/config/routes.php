@@ -97,6 +97,7 @@ $route['login']='client/login';
 $route['logout']='client/logout';
 $route['home']='pages/view';
 
+$route['upload_image']='checkbookings/add_service';
 $route['forms/register']='forms/register';
 // $route['forms/(:any)']='forms/view/$1';
 $route['forms']='forms/index';
