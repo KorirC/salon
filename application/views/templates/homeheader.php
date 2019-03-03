@@ -17,7 +17,26 @@
 
 <!--<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css">-->
 </head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bg{
+  background-image: url("assets/img/bacs.jpg");
+  height: 100%;
+  position: relative;
+  /* opacity: 0.65; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 <body>
+<div class="bg">    
 <nav class="navbar navbar-inverse">
 <div class="container">
 <div class="navbar-header">
@@ -61,4 +80,5 @@ echo '
 </div>
 </div>
 </nav>
+
 <div class="container-fluid">
