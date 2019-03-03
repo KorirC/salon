@@ -47,12 +47,11 @@
  
   /* register page css */
 .formcard{
-    /* background-color:rgba(130, 151, 172, 0.336); */
-    /* background-image: url( ../img/salon.jpg); */
+   
     background-color: whitesmoke;
      color:rgb(39, 37, 37); 
-     font-size:x-large; 
-     font-weight: bolder;
+     /* font-size:large;  */
+     /* font-weight: bolder; */
       margin:20px; 
       max-width:500px;
       margin-bottom:30px;
@@ -63,14 +62,9 @@
       border-radius: 20px;
 }
 .container_home{
-    /* background-image: url("../img/salon.jpg"); */
+   
     min-height: 380px;
     color:black;
-    /* Center and scale the image nicely */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative; */
     background-color: rgba(130, 151, 172, 0.336);
 }
 .form-group-register{

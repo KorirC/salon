@@ -7,12 +7,13 @@ public function register_client(){
 
     $this->load->library('form_validation');
 
-    $this->form_validation->set_rules('idno', 'ID Number','required');
+    $this->form_validation->set_rules('idno', 'ID Number','required|min_length[8]|max_length[8]');
     $this->form_validation->set_rules('name', 'Name','required');
     $this->form_validation->set_rules('gender', 'Gender','required');
-    $this->form_validation->set_rules('email', 'Email','required');
-    $this->form_validation->set_rules('pwd', 'Password','required');
-    $this->form_validation->set_rules('cpwd', 'Password Confirmation','required');
+    $this->form_validation->set_rules('phoneno', 'Phone Number','required|min_length[10]|max_length[10]');
+    $this->form_validation->set_rules('email', 'Email','required|valid_email');
+    $this->form_validation->set_rules('pwd', 'Password','trim|required');
+    $this->form_validation->set_rules('cpwd', 'Password Confirmation','trim|required');
 
 
     if ($this->form_validation->run() == FALSE)

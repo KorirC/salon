@@ -98,7 +98,8 @@ class Checkbookings extends CI_Controller {
               $post_image='noimage.jpg';
             }else{
               $data=array('upload_data'=>$this->upload->data());
-              $post_image=$_FILES['userfile']['name'];
+              $post_image=$data['upload_data']['name'];
+              // $post_image=$_FILES['userfile']['name'];
             }
 
             $this->Admbookings->services($details,$post_image);
