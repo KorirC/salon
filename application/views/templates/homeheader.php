@@ -6,7 +6,8 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
   <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.min.css">
 <link href="<?php echo base_url("assets/js/bootstrap.min.js"); ?>" rel="stylesheet" type="text/css" />
@@ -20,17 +21,16 @@
 <style>
 body, html {
   /* max-width:1000px; */
-  height: 100%;
+  height: 1000px;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
 }
 
 .bg{
-  background-image: url("assets/img/bacs.jpg");
-  height: 100%;
+  background-image: url("assets/img/salonbig3.jpg");
+  height: 20%;
   position: relative;
-  /* opacity: 0.65; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
