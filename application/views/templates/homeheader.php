@@ -19,7 +19,8 @@
 </head>
 <style>
 body, html {
-  height: 100%;
+  /* max-width:1000px; */
+  height: 1000px;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
@@ -34,6 +35,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 </style>
 <body>
 <div class="bg">    
