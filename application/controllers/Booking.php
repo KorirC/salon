@@ -26,10 +26,20 @@ class Booking extends CI_Controller {
         $id=$this->session->userdata('userid');
         $service=$this->input->post('service');
         $date=$this->input->post('date');
-
-         $this->Booking_model->appointment($id,$date,$service);
-         $this->client_appointment();
-
+        $limit_date=$this->validate_date();
+        if($date<$limit_date && $date>=Date("Y-m-d")){
+            $this->Booking_model->appointment($id,$date,$service);
+            $this->client_appointment();
+   
+        }else{
+            $bookings['bookings']=$this->get_next_booking();
+            $bookings['message']="Please choose a valid date a date within two weeks";
+            $this->load->view('templates/header');
+            $this->load->view('forms/booking',$bookings);
+            $this->load->view('templates/footer');
+            return;
+        }
+       
     }
     // function to return to booking page
     public function client_appointment(){
@@ -57,6 +67,17 @@ class Booking extends CI_Controller {
      private function convert_date($date){
         return $newDate = date("Y-m-d", strtotime($date));
       }
+
+      //function to compare booking dates
+      private function validate_date(){
+          return $date_limit=$this->addDayswithdate(Date("Y-m-d"),14);
+      }
+
+      //  adding days
+    private function addDayswithdate($date,$days){
+    $date = strtotime("+".$days." days", strtotime($date));
+    return  date("Y-m-d", $date);
+    }
   
     
 }

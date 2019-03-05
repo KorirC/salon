@@ -57,7 +57,9 @@ $counts=$bookings[1];
 
 </div>
 <!-- <div class="formcard " style="padding-top:10px; background-color:white; font-size:large;"> -->
-<?php echo validation_errors(); ?>
+<?php echo validation_errors();
+  
+ ?>
 
 <?php echo form_open('makebook'); ?>
 <?php 
