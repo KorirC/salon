@@ -1,11 +1,11 @@
 <style>
 .text-block{
   position: absolute; 
-  bottom:20;
+  bottom:0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
-  width: 100%;
+  width: 30%;
   color: white;
   font-size: 20px;
   padding: 20px;

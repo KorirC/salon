@@ -29,11 +29,11 @@
     <div class="overlay">Beachy Waves</div>
     </div>
 
-    <div class="container-gallery">
+    <!-- <div class="container-gallery">
     <img src="assets/img/beadedbraids.jpg" style="width:100%;">
     <div class="overlay">Beaded braids</div>
-    </div>
-    <!-- <img src="assets/img/bushycurl.jpg" style="width:100%;"> -->
+    </div> -->
+   
   </div>
   <div class="column-gallery">
 
@@ -59,10 +59,10 @@
   <img src="assets/img/CrissCrossBun.jpg" style="width:100%;">
   <div class="overlay">Criss CrossBun</div>
   </div>
-  <div class="container-gallery">
+  <!-- <div class="container-gallery">
   <img src="assets/img/crochet.jpg" style="width:100%;">
   <div class="overlay">Crochet</div>
-  </div>
+  </div> -->
  
   </div> 
   <div class="column-gallery">
@@ -86,10 +86,10 @@
   <img src="assets/img/GoldenBlondeCornrowsBun.jpg" style="width:100%;">
   <div class="overlay">Golden Blonde Cornrows Bun</div>
   </div>
-  <div class="container-gallery">
+  <!-- <div class="container-gallery">
   <img src="assets/img/hairmicrocrotchetbraids.jpg" style="width:100%;">
   <div class="overlay">Hair microcrotchet braids</div>
-  </div>
+  </div> -->
   <!-- <div class="container-gallery">
   <img src="assets/img/home.jpg"style="width:100%;">
   <div class="overlay">Crochet</div>
@@ -117,10 +117,10 @@
   <img src="assets/img/TwistedCornrowsUpdo.jpg" style="width:100%;">
   <div class="overlay">Twisted Cornrows Updo</div>
   </div>
-  <div class="container-gallery">
+  <!-- <div class="container-gallery">
   <img src="assets/img/cornrows.jpg" style="width:100%;">
   <div class="overlay">Cornrows</div>
-  </div>
+  </div> -->
   <!-- <div class="container-gallery">
   <img src="assets/img/saffu.jpg" style="width:100%;">
   <div class="overlay">Hair microcrotchet braids</div>

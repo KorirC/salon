@@ -70,7 +70,7 @@ $route['filter_by_date']='checkbookings/filter_by_date';
 $route['feedback']='feedback_controller/enter_feedback';
 // personal details
 $route['myappointments']='checkappointments/index';
-$route['cancel']='checkappointments/cancel';
+$route['cancel/(:any)']='checkappointments/cancel/$1';
 
 
 // routes for stylist

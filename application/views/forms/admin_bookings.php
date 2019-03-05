@@ -26,24 +26,6 @@ input[type=text]{
 </style>
 </head>
 <body>
-<div class="container">
-<?php echo form_open('upload_image'); ?>
-
-<div class="form-group">
-    <label>Details</label>
-    <input type="text"  name="details"  class="form-control"placeholder="Enter the description of service">
-</div>
-
-<div class="form-group">
-    <input type="file" name="userfile" size="20">
-</div>
-<div class="form-group">
-<input type="submit" value="upload" />
-<!-- <button type="submit" class="btn btn-default">Submit</button> -->
-<!-- <a class="btn btn-default" href="<?php echo base_url('upload_image')?>">Submit</a> -->
-<div>
-</form>
-</div>
 
 <div class="container">
   <h2>Appointments Made</h2>

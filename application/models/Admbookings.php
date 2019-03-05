@@ -21,12 +21,5 @@ class Admbookings extends CI_Model{
 		$result=$this->db->update('booking_table', $data, $where);
 		return $result;
 	}	
-// function to add services offered
-	public function services($details,$post_image){
-		$data=array(
-			'details'=>$details,
-			'image'=>$post_image
-		);
-		return $this->db->insert('services',$data); 
-	}
+
 }

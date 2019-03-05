@@ -53,58 +53,8 @@ class Checkbookings extends CI_Controller {
             redirect('admin_bookings');
           }
 
-          //add product
-          public function insert_product(){
-            $this->load->library('form_validation');
-
-            $this->form_validation->set_rules('product', 'Product','required');
-            if ($this->form_validation->run() == FALSE)
-            {
-              redirect('admin_bookings');
-            }else{
-              $product=$this->input->post('product');
-              $amount=$this->input->post('amount');
-              $this->Products_model->insert_earning($product,$amount);
-              redirect('admin_bookings');
-            }
-           
+          
           }
 
-          // add services
-          public function add_service(){
-            $details=$this->input->post('details');
-            
-            $this->load->library('form_validation');
-
-            $this->form_validation->set_rules('details', 'details','required');
-            if ($this->form_validation->run() == FALSE)
-            {
-              // redirect('admin_bookings');
-              echo 'cyn';
-
-          }else{
-            
-            //upload image
-            $config['upload_path']='./assets/img/services';
-            $config['allowed_types']='gif|jpg|png|jpeg';
-            $config['max-size']='2048';
-            $config['max_width']='500';
-            $config['max_height']='500';
-
-            $this->load->library('upload',$config);
-            if(!$this->upload->do_upload('userfile')){
-              $error=array('error'=>$this->upload->display_errors());
-             
-              $post_image='noimage.jpg';
-            }else{
-              $data=array('upload_data'=>$this->upload->data());
-              $post_image=$data['upload_data']['name'];
-              // $post_image=$_FILES['userfile']['name'];
-            }
-
-            $this->Admbookings->services($details,$post_image);
-            redirect('admin_bookings');
-          }
-
-        }
-      }
+        
+      ?>

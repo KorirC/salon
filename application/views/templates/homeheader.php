@@ -20,7 +20,7 @@
 <style>
 body, html {
   /* max-width:1000px; */
-  height: 1000px;
+  height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;

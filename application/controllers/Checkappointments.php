@@ -23,12 +23,13 @@ class Checkappointments extends CI_Controller {
         $this->load->view('templates/header');
         $this->load->view('forms/myappointments',$data);
       }
-      
+  
           //function to cancel appointment
-          public function cancel(){
-            $id=$this->session->userdata('userid');
+          public function cancel($id){
+            // $id=$this->session->userdata('user_auto');
             $this->Myappointments_model->cancel_appointment($id);
             $this->index();
           }
+          
     }
 ?>
