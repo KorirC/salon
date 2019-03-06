@@ -29,7 +29,7 @@ body, html {
 
 .bg{
   background-image: url("assets/img/salonbig3.jpg");
-  height: 20%;
+  height:;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
