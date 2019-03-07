@@ -112,12 +112,11 @@ button:hover
 </style>
 <div class="container">
 <div class="">
-<!-- <h1 style="text-align: center; font-family: auto;
-    font-variant-caps: small-caps; color:black;">Wahu Salon</h1>
+
     <ul class="breadcrumb"style="float:right;">
     <li><a href="<?php echo base_url();?>booking" class="btn btn-default" >Make An Appointment</a></li>
     <li><a href="<?php echo base_url();?>myappointments" class="btn btn-default" >Check My Appointments</a></li>
-    </ul> -->
+    </ul>
   </div>
 </div><br><br>
 
@@ -132,10 +131,7 @@ button:hover
       <div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
-    <ul class="breadcrumb"style="float:right;">
-    <li><a href="<?php echo base_url();?>booking" class="btn btn-default" >Make An Appointment</a></li>
-    <li><a href="<?php echo base_url();?>myappointments" class="btn btn-default" >Check My Appointments</a></li>
-    </ul>
+    
 </div>
 		  </div>
 		</div>
@@ -145,23 +141,17 @@ button:hover
       <div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
-    <ul class="breadcrumb"style="float:right;">
-    <li><a href="<?php echo base_url();?>booking" class="btn btn-default" >Make An Appointment</a></li>
-    <li><a href="<?php echo base_url();?>myappointments" class="btn btn-default" >Check My Appointments</a></li>
-    </ul>
+    
 </div>
 		  </div>
 		</div>
 
 		<div class="mySlides fade">
-		  <div class="text" style="background-image: url(assets/img/salon3.jpg);">
+		  <div class="text" style="background-image: url(assets/img/salon.jpg);">
       <div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
-    <ul class="breadcrumb"style="float:right;">
-    <li><a href="<?php echo base_url();?>booking" class="btn btn-default" >Make An Appointment</a></li>
-    <li><a href="<?php echo base_url();?>myappointments" class="btn btn-default" >Check My Appointments</a></li>
-    </ul>
+    
    </div>
 		  </div>
 		</div>
@@ -171,10 +161,7 @@ button:hover
 			<div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
-    <ul class="breadcrumb"style="float:right;">
-    <li><a href="<?php echo base_url();?>booking" class="btn btn-default" >Make An Appointment</a></li>
-    <li><a href="<?php echo base_url();?>myappointments" class="btn btn-default" >Check My Appointments</a></li>
-    </ul>
+   
 </div>
 		  </div>
 		</div>
@@ -217,29 +204,29 @@ function showSlides(n) {
  <div class="row">
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/Blowdry2(2).jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style="font-weight:bold; font-size:20px; font-family:-webkit-pictograph;">Blow dry starting from ksh 100</p>
+  <p style=" font-size:20px; ">Blow dry starting from ksh 100</p>
   </div>
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/hairstyling2.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px; ">
-  <p style="font-weight:bold; font-size:20px; font-family:-webkit-pictograph;">Hair styling starting from ksh 500</p>
+  <p style=" font-size:20px; ">Hair styling starting from ksh 500</p>
   </div>
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/plaiting.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style="font-weight:bold; font-size:20px; font-family:-webkit-pictograph;">Hair plaiting starting from ksh 500</p>
+  <p style=" font-size:20px; ">Hair plaiting starting from ksh 500</p>
   </div>
  </div>
  <div class="row">
  <div class="col-md-4 col-sm-4">
   <img  src="assets/img/coloring2.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style="font-weight:bold; font-size:20px;font-family:-webkit-pictograph;">Hair coloring starting from ksh 500</p>
+  <p style=" font-size:20px;">Hair coloring starting from ksh 500</p>
   </div>
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/haircut.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style="font-weight:bold; font-size:20px; font-family:-webkit-pictograph;">Hair cut starting from ksh 200</p>
+  <p style=" font-size:20px; ">Hair cut starting from ksh 200</p>
   </div>
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/hairtrim.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style="font-weight:bold; font-size:20px; font-family:-webkit-pictograph;">Hair trimming starting from ksh 200</p>
+  <p style=" font-size:20px; ">Hair trimming starting from ksh 200</p>
   </div>
  </div>
 </div>

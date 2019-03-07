@@ -19,7 +19,7 @@ public function register_client(){
     if ($this->form_validation->run() == FALSE)
     {
         $msg['message']='';
-        $this->load->view('templates/header');
+        $this->load->view('templates/homeheader');
         $this->load->view('forms/register',$msg);
         $this->load->view('templates/footer');
     }
@@ -53,33 +53,33 @@ public function register_client(){
 // function to return to same page
     private function return_register($message){
         $msg['message']=$message;
-        $this->load->view('templates/header');
+        $this->load->view('templates/homeheader');
         $this->load->view('forms/register',$msg);
         $this->load->view('templates/footer');
     }
     // route to login page
     public function login(){
         $msg['message']='';
-        $this->load->view('templates/header');
+        $this->load->view('templates/homeheader');
         $this->load->view('forms/login',$msg);
         // $this->load->view('templates/footer');
     }
     // login user
     public function auth_user(){
-        $phone=$this->input->post('phoneno');
+        $email=$this->input->post('email');
         $password=$this->input->post('pwd');
-        $users= $this->Client_model->login($phone,$password);
+        $users= $this->Client_model->login($email,$password);
         
         if($users->num_rows() > 0){
             $data  = $users->row_array();
-            $phone = $data['phone_number'];
+            $email = $data['email'];
             $password  = $data['password'];
             $level = $data['user_level'];
             
             
             $sesdata = array(
                 'userid'=>$data['id'],
-                'phoneno' => $phone,
+                'email' => $email,
                 'pwd'  => $password,
                 'level'     => $level,
                 'logged_in' => TRUE
@@ -104,7 +104,7 @@ public function register_client(){
     //return user to login page
     private function return_login($message){
         $msg['message']=$message;
-        $this->load->view('templates/header');
+        $this->load->view('templates/homeheader');
         $this->load->view('forms/login',$msg);
         $this->load->view('templates/footer');
     }

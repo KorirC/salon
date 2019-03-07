@@ -24,8 +24,8 @@ class Client_model extends CI_Model{
     }
 
     //function to login
-    public function login($phone,$password){
-        $query=$this->db->get_where('client_table',array('phone_number'=>$phone, 'password'=>$password),1);
+    public function login($email,$password){
+        $query=$this->db->get_where('client_table',array('email'=>$email, 'password'=>$password),1);
         return $query;
     } 
 }

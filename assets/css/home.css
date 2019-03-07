@@ -21,7 +21,7 @@
 /* added topmenu css */
 .button_well{
     height: 100px;
-    width: 200px;
+    width: 150px;
     margin-top: 10px;
     margin-left:10px;
     background-color: rgb(233, 227, 227);
@@ -34,7 +34,7 @@
 
   .button_well :hover{
     height: 100px;
-    width: 200px;
+    width: 100px;
     margin-top: 10px;
     margin-left:10px;
     background-color: rgb(209, 202, 202);
@@ -86,20 +86,6 @@
     max-width: 300px;
     float:right;
 }
-.pagecontainer-reg{
-        /* The image used */
-  background-image: url("../img/salon.jpg");
-
-  /* Control the height of the image */
-  min-height: 380px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 
 /* custom admin nav bar css */
 .custom-nav{
@@ -161,20 +147,6 @@
 .btn-login:hover {
     opacity: 1;
   }
-.bg-img{
-     /* The image used */
-  background-image: url("../img/salon.jpg");
-
-  /* Control the height of the image */
-  min-height: 380px;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 
 /* home page css*/
 .header_nav a{
@@ -194,11 +166,13 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 4px;
+       
 }
 .column-gallery{
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
+
 }
 .column-gallery img{
     margin-top: 8px;

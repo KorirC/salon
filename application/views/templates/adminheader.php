@@ -20,9 +20,9 @@
 <div id="navbar">
 <ul class="nav navbar-nav ">
 <li><a class="text-theme-one" href="<?php echo base_url();?>admin_bookings">Home</a></li>
-<!-- <li><a class="text-theme-one" href="<?php echo base_url();?>forms/services">Services</a></li> -->
-<!-- <li><a class="text-theme-one" href="<?php echo base_url();?>contact_us">Contact Us</a></li> -->
-<!-- <li><a class="text-theme-one" href="<?php echo base_url();?>gallery">Gallery</a></li> -->
+<li><a class="text-theme-one" href="<?php echo base_url();?>products">Services</a></li>
+<li><a class="text-theme-one" href="<?php echo base_url();?>contact_us">Contact Us</a></li>
+<li><a class="text-theme-one" href="<?php echo base_url();?>gallery">Gallery</a></li>
 </ul>
 <?php 
 if(empty($this->session->userdata("userid"))){
@@ -37,7 +37,7 @@ echo '
 }else{
   echo '
   <ul class="nav navbar-nav navbar-right">
-    <li><a href="'.base_url().'admin_register" class="btn btn-default" >Make Admin</a></li>
+    <li><a href="'.base_url().'admin_register">Make Admin</a></li>
     <li><a href="'.base_url().'/logout">logout</a></li>
     </ul>
   

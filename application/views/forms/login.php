@@ -10,8 +10,8 @@
     <h2 class="login">LOGIN</h2> 
     <div class="form-group-login">	
      <div class="form-group">
-      <label for="phoneno">Phone number:</label>
-      <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" name="email" placeholder="Enter your email">
     </div>
 
      <div class="form-group">
@@ -19,7 +19,8 @@
     <input type="password" class="form-control" name="pwd">
   </div>
   <div class="form-group">
-  <button type="submit" class="btn-login btn-default">Submit</button>
+  <button type="submit" class="btn-login btn-default">Submit</button><br><br>
+  <a href="<?php echo base_url();?>forms">Sign Up</a>
   </div>
   </div>
 </form>

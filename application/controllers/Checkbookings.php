@@ -19,8 +19,6 @@ class Checkbookings extends CI_Controller {
         // redirect ('login');
       }
     }
-
-   
 }
 
 

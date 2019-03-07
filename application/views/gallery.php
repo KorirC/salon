@@ -1,4 +1,4 @@
-<div class="headertext">
+<div class="headertext" style="color:white;">
 					 GALLERY <hr>
 </div>
 
