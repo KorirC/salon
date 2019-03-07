@@ -1,11 +1,27 @@
 <?php
 class Earning extends  CI_Controller {
+   private function is_logged_in(){
+      $id=$this->session->userdata('userid');
+      if(!isset($id)){
+          // this user is not logged in
+          echo "Unauthorized Access!!";
+         //  redirect('login');
+
+      }else{ 
+         if($this->session->userdata('level')==='1'){
+         $data['thisearngs']=$this->get_thisWeek();
+         $data['lastearngs']=$this->get_lastWeek();
+         $this->load->view('templates/adminheader');
+         $this->load->view('templates/topmenu');
+         $this->load->view('earning_view',$data);
+      }else{
+        echo "Unauthorized Access!!";
+        // redirect ('login');
+      }}
+     
+   }
  public function index(){
-    $data['thisearngs']=$this->get_thisWeek();
-    $data['lastearngs']=$this->get_lastWeek();
-    $this->load->view('templates/adminheader');
-    $this->load->view('templates/topmenu');
-    $this->load->view('earning_view',$data);
+    $this->is_logged_in();
    
  }
 

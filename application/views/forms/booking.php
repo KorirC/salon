@@ -16,13 +16,11 @@
   cursor: pointer;
 }
 
-/* CHECKED STYLES */
-/* [type=radio]:checked + img {
-  border: 1px solid black;
-  background-color:red;
-  outline-style: solid;
-  outline-color: coral;
-} */
+.test{
+  color:red;
+  font-size:15px;
+  
+}
 .radioButton input:checked ~ .image_option{
   background-color:#717bd1 !important;
   color:#717bd1 !important;
@@ -68,10 +66,10 @@ if(isset($message)){
 }
 
 ?>
-<div class="container">
+<div class="container" style="color:black;">
   <h2 style="text-align:center;">Book For Our Services</h2>
 <!-- 1st row -->
- <div class="row" ><!--style="margin-left:140px;"  -->
+ <div class="row"  ><!--style="margin-left:140px;"  -->
 <div class="col-md-4">
 <label class="radioButton">
       <input  type="radio" name="service" value="Hair cut" checked><h4 class="input_text">Hair Cut</h4><br>
@@ -122,7 +120,8 @@ if(isset($message)){
 </div>
 </div>  <br>
 </form>
-<div class="container" style="background-color: rgb(233, 227, 227);">
+<!-- Feedback  -->
+<div class="container" style="background-color: rgb(233, 227, 227);color:black;">
     <div class="row">
         <div class="col-md-6">
             <h3 style="text-align:center;" >Get In Touch</h3>

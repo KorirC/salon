@@ -10,6 +10,9 @@ class Booking extends CI_Controller {
 
         }
     }
+
+
+    // booking page
     public function index(){
             $this->is_logged_in();
            
@@ -33,7 +36,7 @@ class Booking extends CI_Controller {
    
         }else{
             $bookings['bookings']=$this->get_next_booking();
-            $bookings['message']="Please choose a valid date a date within two weeks";
+            $bookings['message']="<span class=test>Please choose a valid date, a date within two weeks<span>";
             $this->load->view('templates/header');
             $this->load->view('forms/booking',$bookings);
             $this->load->view('templates/footer');

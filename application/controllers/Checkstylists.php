@@ -1,11 +1,28 @@
 <?php
 
 class Checkstylists extends CI_Controller {
-    public function index(){    
-        $data['stylists']=$this->Admstylists->display_records();
-        $this->load->view('templates/adminheader');
-        $this->load->view('templates/topmenu');
-        $this->load->view('forms/admin_stylists',$data);
+  private function is_logged_in(){
+    $id=$this->session->userdata('userid');
+    if(!isset($id)){
+        // this user is not logged in
+        echo "Unauthorized Access!!";
+        // redirect('login');
+
+    }else{
+    if($this->session->userdata('level')==='1'){
+      $data['stylists']=$this->Admstylists->display_records();
+      $this->load->view('templates/adminheader');
+      $this->load->view('templates/topmenu');
+      $this->load->view('forms/admin_stylists',$data);
+    }else{
+      echo "Unauthorized Access!!";
+      // redirect ('login');
+    }
+  }
+}
+    public function index(){  
+      $this->is_logged_in();  
+     
       }   
       // function to display data
       public function displaydata()

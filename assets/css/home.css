@@ -267,4 +267,7 @@ color:#434470;
     margin-left: 50px;
      font-family: -webkit-pictograph;
  }
- 
+ /* error */
+ .error{
+     color:red;
+ }

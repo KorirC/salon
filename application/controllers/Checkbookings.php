@@ -1,11 +1,36 @@
 <?php
-
+defined('BASEPATH')OR exit('No direct script access allowed');
 class Checkbookings extends CI_Controller {
-    public function index(){    
+  private function is_logged_in(){
+    $id=$this->session->userdata('userid');
+    if(!isset($id)){
+        // this user is not logged in
+        echo "Unauthorized Access!!";
+        // redirect('login');
+
+    }else{
+      if($this->session->userdata('level')==='1'){
         $data['bookings']=$this->Admbookings->display_records();
-        $this->load->view('templates/adminheader');
-        $this->load->view('templates/topmenu');
-        $this->load->view('forms/admin_bookings',$data);
+          $this->load->view('templates/adminheader');
+          $this->load->view('templates/topmenu');
+          $this->load->view('forms/admin_bookings',$data);
+      }else{
+        echo "Unauthorized Access!!";
+        // redirect ('login');
+      }
+    }
+
+   
+}
+
+
+  // function to load admin_bookings
+    public function index(){  
+   
+     $this->is_logged_in();
+    
+
+       
       }  
 
         //function to filter booking by date
