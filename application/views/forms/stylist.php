@@ -54,6 +54,9 @@ input[type=submit]:hover {
   font-size:15px;
   
 }
+.error{
+  color:red;
+}
 </style>
 
 <div class="pagecontainer">
@@ -62,7 +65,7 @@ input[type=submit]:hover {
         </div>
 
 <div class="container" ><!--  -->
-<?php echo validation_errors(); ?>
+<!-- <?php echo validation_errors(); ?> -->
 
 <?php echo form_open('addstylist'); ?>
 <?php 
@@ -78,39 +81,43 @@ if(isset($message)){
     
     <div class="row">
     
-    
+<div class="form-group">
       <label for="name">Name:</label>
-      <input type="text" class="form-control" name="name" placeholder="Enter name" required>
-   
+      <input type="text" class="form-control" name="name" value="<?php echo set_value('name'); ?>" placeholder="Enter name"  >
+      <?php echo form_error('name', '<div class="error">', '</div>'); ?>
+</div>
 
-     
+<div class="form-group">
       <label for="gender">Gender:</label><br>
       <input type="radio" name="gender" value='Male'>Male <br>
       <input type="radio" name="gender" value='Female'>Female
-   
+      <?php echo form_error('gender', '<div class="error">', '</div>'); ?>
+</div> 
 
-    	<br>
+<div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" class="form-control" name="email" placeholder="Enter email">
-   
+      <input type="email" class="form-control" name="email" value="<?php echo set_value('email'); ?>" placeholder="Enter email" >
+      <?php echo form_error('email', '<div class="error">', '</div>'); ?>
+</div>
 
-    
+<div class="form-group">
       <label for="idno">ID number:</label>
-      <input type="int" class="form-control" name="idno" placeholder="Enter ID number">
-    
-
-     
+      <input type="int" class="form-control" name="idno" value="<?php echo set_value('idno'); ?>" placeholder="Enter ID number"  >
+      <?php echo form_error('idno', '<div class="error">', '</div>'); ?>
+</div>
+<div class="form-group">
       <label for="phoneno">Phone number:</label>
-      <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number">
-   
+      <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number" value="<?php echo set_value('phoneno'); ?>">
+      <?php echo form_error('phoneno', '<div class="error">', '</div>'); ?>
+</div> 
 
-    
+<div class="form-group">
       <label for="hairstyle">Hairstyle/s:</label>
-      <input type="int" class="form-control" name="hairstyle" placeholder="Good in which hairstyle?">
-   
-      
+      <input type="int" class="form-control" name="hairstyle" placeholder="Good in which hairstyle?"  value="<?php echo set_value('hairstyle'); ?>">
+</div>
+      <div class="form-group">
         <button type="submit" class="btn btn-default">Submit</button> <a class="btn btn-default" href="<?=base_url('admin_stylists');?>">Back</a>
-     
+     </div>
 
   </div>
 </form>

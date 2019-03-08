@@ -5,7 +5,7 @@ class Myappointments_model extends CI_Model{
 	{
         $this->db->order_by('date','desc');
         $query=$this->db->get_where('booking_table',array('id'=>$id));
-		return $query->result();
+        return $query->result();
     }
     
     //function to cancel appointment

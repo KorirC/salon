@@ -5,7 +5,6 @@
 <style>
 .error{
   color:red;
-  
 }
 </style>
 </head>
@@ -25,8 +24,7 @@ if(isset($message)){
 ?>
 <div class="register_top">
       <h2>REGISTER</h2>
-    <!-- <P style="text-align:center;FONT-FAMILY: -webkit-pictograph;">
-    We aim to be your home from home,where you always feel special and welcome within our relaxed, <br> unhurried surroundings, all designed to ensure your total relaxation. </P> -->
+    
  </div>
 
 
