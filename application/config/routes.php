@@ -71,7 +71,9 @@ $route['feedback']='feedback_controller/enter_feedback';
 // personal details
 $route['myappointments']='checkappointments/index';
 $route['cancel/(:any)']='checkappointments/cancel/$1';
-
+//reports
+$route['report']='report_controller/index';
+$route['report_bookings']='report_controller/show_bookings';
 
 // routes for stylist
 $route['addstylist']='stylist/index';
