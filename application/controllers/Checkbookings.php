@@ -15,8 +15,8 @@ class Checkbookings extends CI_Controller {
           $this->load->view('templates/topmenu');
           $this->load->view('forms/admin_bookings',$data);
       }else{
-        echo "Unauthorized Access!!";
-        // redirect ('login');
+        
+        redirect ('home');
       }
     }
 }

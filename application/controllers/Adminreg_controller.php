@@ -43,8 +43,8 @@ public function register_client(){
     $email=$this->input->post('email');
     $phone=$this->input->post('phoneno');
     // $level=$this->input->post('level');
-    $password=$this->input->post('pwd');
-    $comfirm_password=$this->input->post('cpwd');
+    $password=md5($this->input->post('pwd'));
+    $comfirm_password=md5($this->input->post('cpwd'));
 
    
 
@@ -74,7 +74,7 @@ public function register_client(){
     public function login(){
         $msg['message']='';
         $this->load->view('templates/adminheader');
-        $this->load->view('forms/login',$msg);
+        $this->load->view('forms/admin_register',$msg);
         // $this->load->view('templates/footer');
     }
     // login user
@@ -97,22 +97,12 @@ public function register_client(){
                 'logged_in' => TRUE
             );
             $this->session->set_userdata($sesdata);
-            // access login for admin
-            if($level === '1'){
+          
                 redirect('admin_bookings');
      
-            // access login for staff
-            }elseif($level === '2'){
-                redirect('home');
-     
-            // access login for author
-            }
-        }else{
-            echo $this->session->set_flashdata('msg','Username or Password is Wrong');
-            redirect('login');
         }
 
-    }
+    } 
     //return user to login page
     private function return_login($message){
         $msg['message']=$message;

@@ -9,6 +9,8 @@
 <link href="<?php echo base_url("assets/img"); ?>" rel="stylesheet" type="text/css" />
 
 <!--<link rel="stylesheet" href="<?php echo base_url();?>/assets/css/style.css">-->
+
+
 </head>
 <body>
 <nav class="navbar navbar-default custom-nav ">
@@ -23,7 +25,8 @@
 <li><a class="text-theme-one" href="<?php echo base_url();?>products">Services</a></li>
 <li><a class="text-theme-one" href="<?php echo base_url();?>contact_us">Contact Us</a></li>
 <li><a class="text-theme-one" href="<?php echo base_url();?>gallery">Gallery</a></li>
-<li><a class="text-theme-one" href="<?php echo base_url();?>report">Report</a></li>
+
+
 </ul>
 <?php 
 if(empty($this->session->userdata("userid"))){

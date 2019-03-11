@@ -13,48 +13,51 @@ div.polaroid {
     text-align:center;
 }
 </style>
-
+<div class="headertext" style="color:white;">
+					 HAIR PRODUCTS & OIL <hr>
+                     <p>These are a sample of the hair products that we sell at our salon. Visit us to have a view of several others.</p>
+</div>
 <div class="container" style="background-color:white;"><br>
 <div class="row">
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
         <img src="assets/img/shampoo.png" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Shampoo</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
         <img src="assets/img/Dove.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Dove</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
         <img src="assets/img/DeepCleansingShampoo.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Cleasing shampoo</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
         <img src="assets/img/Familyshampoo.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Family shampoo</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
-        <img src="assets/img/Familyshampoo.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <img src="assets/img/products/ayurvedicoil.png" style="width:100%">
+        <div class="desc">Ayurvedic oil</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
-        <img src="assets/img/Familyshampoo.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <img src="assets/img/products/kazima.jpeg" style="width:100%">
+        <div class="desc">Kazima</div>
         </div>
     </div>
 
@@ -63,29 +66,29 @@ div.polaroid {
 <div class="row">
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
-        <img src="assets/img/shampoo.png" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <img src="assets/img/products/keshsilkoil.jpg" style="width:100%">
+        <div class="desc">Kesh silk oil</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
-        <img src="assets/img/Dove.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <img src="assets/img/products/khadi.jpg" style="width:100%">
+        <div class="desc">Khadi</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
-        <img src="assets/img/DeepCleansingShampoo.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <img src="assets/img/products/Mankettioil.jpg" style="width:100%">
+        <div class="desc">Manketti oil</div>
         </div>
     </div>
 
     <div class="col-md-2 col-sm-2">
         <div class="polaroid">
-        <img src="assets/img/Familyshampoo.jpg" style="width:100%">
-        <div class="desc">Add a description of the image here</div>
+        <img src="assets/img/products/onionoil.jpg" style="width:100%">
+        <div class="desc">Onion oil</div>
         </div>
     </div>
 

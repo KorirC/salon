@@ -15,7 +15,7 @@
                 <h4 style="color:#337ab7;">Links</h4>
                 <ul>
                     <li><a href="<?php echo base_url();?>">Home</a></li><br>
-                    <li><a href="<?php echo base_url();?>products">Services</a></li><br>
+                    <li><a href="<?php echo base_url();?>products">Hair Products</a></li><br>
                     <li><a href="<?php echo base_url();?>contact_us">Contact Us</a></li><br>
                     <li><a href="<?php echo base_url();?>gallery">Gallery</a></li>
                 </ul>
