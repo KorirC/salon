@@ -11,7 +11,7 @@ public function register_client(){
     $this->form_validation->set_rules('name', 'Name','required');
     $this->form_validation->set_rules('gender', 'Gender','required');
     $this->form_validation->set_rules('phoneno', 'Phone Number','required|exact_length[10]');
-    $this->form_validation->set_rules('email', 'Email','required|valid_email');
+    $this->form_validation->set_rules('email', 'Email','required|is_unique[client_table.email]valid_email');
     $this->form_validation->set_rules('pwd', 'Password','trim|required');
     $this->form_validation->set_rules('cpwd', 'Password Confirmation','trim|required');
 

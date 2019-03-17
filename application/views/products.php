@@ -14,8 +14,11 @@ div.polaroid {
 }
 </style>
 <div class="headertext" style="color:white;">
-					 HAIR PRODUCTS & OIL <hr>
+					  <hr>
+                     <div class="well well-lg" style="color:black;text-align:center;">
+                     <h2>Hair Products & Oil</h2>
                      <p>These are a sample of the hair products that we sell at our salon. Visit us to have a view of several others.</p>
+                    </div>
 </div>
 <div class="container" style="background-color:white;"><br>
 <div class="row">

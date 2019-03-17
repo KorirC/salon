@@ -74,6 +74,7 @@ $route['cancel/(:any)']='checkappointments/cancel/$1';
 //reports
 $route['report']='report_controller/index';
 $route['report_bookings']='report_controller/show_bookings';
+$route['report_earnings']='report_controller/get_lastWeek';
 
 // routes for stylist
 $route['addstylist']='stylist/index';

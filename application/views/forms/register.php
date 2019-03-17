@@ -14,7 +14,7 @@
 					 REGISTER <hr>
         </div>
 <div class="formcard">
-<!-- <?php echo validation_errors(); ?> -->
+
 <?php echo form_open('register'); ?>
 <?php 
 if(isset($message)){
@@ -86,6 +86,6 @@ if(isset($message)){
 </div>
 </div>
 </form>
-<div>
+<div><br>
 
  

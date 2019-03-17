@@ -7,8 +7,9 @@
 <?php if(isset($message)){
   echo $message;
 }?>
-    <h2 class="login">LOGIN</h2> 
+    
     <div class="form-group-login">	
+    <h2 class="login">LOGIN</h2> 
      <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" class="form-control" name="email" placeholder="Enter your email">

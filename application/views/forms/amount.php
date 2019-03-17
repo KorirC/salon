@@ -13,6 +13,15 @@ input[type=number]{
   border-radius: 4px;
   box-sizing: border-box;
 }
+input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 </style>
 
 </head>
@@ -27,7 +36,12 @@ input[type=number]{
       <!-- <label for="amount">Enter the amount:</label> -->
       <div class="form-group">
           <input type="number" class="bt nbtn btn-default" name="amount" placeholder="Enter amount" required>
-          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+        <div class="form-group">
+          <input type="text" class="bt nbtn btn-default" name="name" placeholder="Stylist">
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
         </div>
     </form>
     </div>

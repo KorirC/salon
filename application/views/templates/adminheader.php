@@ -22,7 +22,7 @@
 <div id="navbar">
 <ul class="nav navbar-nav ">
 <li><a class="text-theme-one" href="<?php echo base_url();?>admin_bookings">Home</a></li>
-<li><a class="text-theme-one" href="<?php echo base_url();?>products">Services</a></li>
+<li><a class="text-theme-one" href="<?php echo base_url();?>products">Hair Products</a></li>
 <li><a class="text-theme-one" href="<?php echo base_url();?>contact_us">Contact Us</a></li>
 <li><a class="text-theme-one" href="<?php echo base_url();?>gallery">Gallery</a></li>
 

@@ -71,7 +71,8 @@ class Checkbookings extends CI_Controller {
           //add earning
           public function insert_earning($autoid,$id){
             $amount=$this->input->post('amount');
-            $this->Earning_model->insert_earning($id,$amount);
+            $stylist=$this->input->post('name');
+            $this->Earning_model->insert_earning($id,$amount,$stylist);
             $this->Admbookings->change_status($autoid,"Cleared");
             redirect('admin_bookings');
           }

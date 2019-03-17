@@ -2,7 +2,11 @@
 <head>
 <title>Form</title>
 <link href="<?php echo base_url("assets/css/bootstrap.css"); ?>" rel="stylesheet" type="text/css" />
-
+<style>
+.error{
+  color:red;
+}
+</style>
 </head>
 <body>
 <div class="pagecontainer-reg">
@@ -10,7 +14,7 @@
 					 REGISTER <hr>
         </div>
 <div class="formcard">
-<?php echo validation_errors(); ?>
+<!-- <?php echo validation_errors(); ?> -->
 <?php echo form_open('admin_register'); ?>
 <?php 
 if(isset($message)){
@@ -34,37 +38,42 @@ if(isset($message)){
     
     <div class="form-group">
       <label for="name">Name:</label>
-      <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+      <input type="text" class="form-control" name="name" placeholder="Enter name" value="<?php echo set_value('name'); ?>">
+      <?php echo form_error('name', '<div class="error">', '</div>'); ?>
     </div>
 
      <div class="form-group">
       <label for="gender">Gender:</label><br>
-      <input type="radio" name="gender" value='Male'>Male <br>
-      <input type="radio" name="gender" value='Female'>Female
+      <input type="radio" name="gender" value='Male' value="<?php echo set_value('gender'); ?>">Male <br>
+      <input type="radio" name="gender" value='Female' value="<?php echo set_value('gender'); ?>">Female
+      <?php echo form_error('gender', '<div class="error">', '</div>'); ?>
     </div>
 
     <div class="form-group">	
       <label for="email">Email:</label>
-      <input type="email" class="form-control" name="email" placeholder="Enter email">
+      <input type="email" class="form-control" name="email" placeholder="Enter email"value="<?php echo set_value('email'); ?>">
+      <?php echo form_error('email', '<div class="error">', '</div>'); ?>
     </div>
 
     <div class="form-group">
       <label for="idno">ID number:</label>
-      <input type="int" class="form-control" name="idno" placeholder="Enter ID number">
+      <input type="int" class="form-control" name="idno" placeholder="Enter ID number"value="<?php echo set_value('idno'); ?>">
+      <?php echo form_error('idno', '<div class="error">', '</div>'); ?>
     </div>
 
      <div class="form-group">
       <label for="phoneno">Phone number:</label>
-      <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number">
+      <input type="int" class="form-control" name="phoneno" placeholder="Enter Phone number"value="<?php echo set_value('phoneno'); ?>">
+      <?php echo form_error('phoneno', '<div class="error">', '</div>'); ?>
 </div>
      <div class="form-group">
     <label for="pwd">Password:</label>
-    <input type="password" class="form-control" name="pwd">
+    <input type="password" class="form-control" name="pwd"value="<?php echo set_value('pwd'); ?>">
   </div>
 
   <div class="form-group">
     <label for="pwd">Password Confirmation:</label>
-    <input type="password" class="form-control" name="cpwd">
+    <input type="password" class="form-control" name="cpwd" value="<?php echo set_value('cpwd'); ?>">
   </div>
   <div class="form-group">
   <button type="submit" class="btn btn-success">Submit</button>

@@ -109,24 +109,25 @@ EOD;
 $pdf->WriteHTMLCell(0,0, '','', $title, 0,1,0, true, 'C', true);
 $table='<table style="border:1px solid #000; padding:6px;">';
 $table.='<tr style="background-color:#ccc;">
-            <th style="border:1px solid #000;">No</th>
-            <th style="border:1px solid #000;">Id No</th>
-            <th style="border:1px solid #000;">Name</th>
-            <th style="border:1px solid #000;">Email</th>
-            <th style="border:1px solid #000;">Phone Number</th>
-            <th style="border:1px solid #000;">Date</th>
-            <th style="border:1px solid #000;">Service</th>
+            <th style="border:1px solid #000;">Sunday</th>
+            <th style="border:1px solid #000;">Monday</th>
+            <th style="border:1px solid #000;">Tuesday</th>
+            <th style="border:1px solid #000;">wednesday</th>
+            <th style="border:1px solid #000;">Thursday</th>
+            <th style="border:1px solid #000;">Friday</th>
+            <th style="border:1px solid #000;">Sartuday</th>
         </tr>';
 $no=1;
 foreach($data as $row){
 $table.='<tr>
-        <td style="border:1px solid #000;">'.$no++.'</td>
-        <td style="border:1px solid #000;">'.$row->id.'</td>
-        <td style="border:1px solid #000;">'.$row->name.'</td>
-        <td style="border:1px solid #000;">'.$row->email.'</td>
-        <td style="border:1px solid #000;">'.$row->phone_number.'</td>
-        <td style="border:1px solid #000;">'.$row->date.'</td>
-        <td style="border:1px solid #000;">'.$row->service.'</td>
+
+        <td style="border:1px solid #000;">'. $earnings[0].'</td>
+        <td style="border:1px solid #000;">'. $earnings[1].'</td>
+        <td style="border:1px solid #000;">'. $earnings[2].'</td>
+        <td style="border:1px solid #000;">'. $earnings[3].'</td>
+        <td style="border:1px solid #000;">'. $earnings[4].'</td>
+        <td style="border:1px solid #000;">'. $earnings[5].'</td>
+        <td style="border:1px solid #000;">'. $earnings[6].'</td>
     </tr>';
 }
 $table .='</table>';

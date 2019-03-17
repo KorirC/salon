@@ -80,7 +80,7 @@ button:hover
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: all .2s ease-in-out;
 }
 .active 
 {
@@ -89,19 +89,37 @@ button:hover
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3.0s;
-  animation-name: fade;
+  /* -webkit-animation-name: fade 3s;
+  -webkit-animation-duration: 3.0s; */
+  animation: fade 3s;
   animation-duration: 3.0s;
 }
-@-webkit-keyframes fade {
+/* @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
+} */
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  /* from {opacity: .4} 
+  to {opacity: 1} */
+  0%{
+      opacity: 1;
+     
+   }
+
+   25%{
+   opacity: 1;
+     
+   }
+   50%{
+   opacity: 1;
+}
+75%{
+   opacity: 1;
+}
+100%{
+   opacity: 1;
+}
 }
 
 
@@ -127,7 +145,7 @@ button:hover
 <!-- slideshow -->
 <div class="slideshow-container">
 		<div class="mySlides fade">
-		  <div class="text" style="background-image: url(assets/img/bacs.jpg);">
+		  <div class="text" style="background-image: url(assets/img/blowdry2.jpg);">
       <div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
@@ -147,7 +165,7 @@ button:hover
 		</div>
 
 		<div class="mySlides fade">
-		  <div class="text" style="background-image: url(assets/img/salon.jpg);">
+		  <div class="text" style="background-image: url(assets/img/products/slide3.jpg);">
       <div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
@@ -157,7 +175,7 @@ button:hover
 		</div>
 		
 		<div class="mySlides fade">
-		  <div class="text" style="background-image: url(assets/img/salonoutlay.jpg);">
+		  <div class="text" style="background-image: url(assets/img/bacs.jpg);">
 			<div class="text-block">
     <h1 style=" text-align:center; margin:30 30 10px;">Wahu Salon</h1>
     <p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin:30 30 10px;">At Wahu Salon we provide services with a range of starting & maintaining locks, styling,various hairstyles as per one's desires and also sell various hairproducts. We offer the best services. </P>
@@ -203,44 +221,44 @@ function showSlides(n) {
 <h2 style="text-align:center; font-family:-webkit-pictograph;">Our Services</h2>
  <div class="row">
   <div class="col-md-4 col-sm-4">
-  <img  src="assets/img/Blowdry2(2).jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style=" font-size:20px; ">Blow dry starting from ksh 100</p>
+  <img  src="assets/img/Blowdry2(2).jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px;">
+  <p style=" font-size:15px; ">Blow dry starting from ksh 100</p>
   </div>
   <div class="col-md-4 col-sm-4">
-  <img  src="assets/img/hairstyling2.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px; ">
-  <p style=" font-size:20px; ">Hair styling starting from ksh 500</p>
+  <img  src="assets/img/hairstyling2.jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px; ">
+  <p style=" font-size:15px; ">Hair styling starting from ksh 500</p>
   </div>
   <div class="col-md-4 col-sm-4">
-  <img  src="assets/img/plaiting.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style=" font-size:20px; ">Hair plaiting starting from ksh 500</p>
+  <img  src="assets/img/plaiting.jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px;">
+  <p style=" font-size:15px; ">Hair plaiting starting from ksh 500</p>
   </div>
  </div>
  <div class="row">
  <div class="col-md-4 col-sm-4">
-  <img  src="assets/img/coloring2.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style=" font-size:20px;">Hair coloring starting from ksh 500</p>
+  <img  src="assets/img/coloring2.jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px;">
+  <p style=" font-size:15px;">Hair coloring starting from ksh 500</p>
   </div>
   <div class="col-md-4 col-sm-4">
-  <img  src="assets/img/haircut.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style=" font-size:20px; ">Hair cut starting from ksh 200</p>
+  <img  src="assets/img/haircut.jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px;">
+  <p style=" font-size:15px; ">Hair cut starting from ksh 200</p>
   </div>
   <div class="col-md-4 col-sm-4">
-  <img  src="assets/img/hairtrim.jpg" alt="Norway" class="img-rounded"style="width:250px; height:250px;">
-  <p style=" font-size:20px; ">Hair trimming starting from ksh 200</p>
+  <img  src="assets/img/hairtrim.jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px;">
+  <p style=" font-size:15px; ">Hair trimming starting from ksh 200</p>
   </div>
  </div>
-</div>
+</div><br><br>
 
 <!-- Gallery part -->
 <div class="row" style="background-color: rgb(233, 227, 227);">
 <div class="col-md-6 col-sm-6" >
-<p style="text-align:center; font-size:30px; font-family:-webkit-pictograph;  margin: 80 70 10px;">Wahu salon offers the best services. You can browse through our gallery to have a look. We look forward to partnering with you</p>
+<p style="text-align:center; font-size:20px; font-family:-webkit-pictograph;  margin: 80 70 10px;">Wahu salon offers the best services. You can browse through our gallery to have a look. We look forward to partnering with you</p>
 <a href="<?php echo base_url();?>gallery" class="btn btn-primary" style="margin: 40 250 10px;" >Gallery</a>
 </div>
 <div class="col-md-6 col-sm-6">
-<img src="assets/img/GoldenBlondeCornrowsBun.jpg" class="img-rounded" style="width:100%; height:400px;" >
+<img src="assets/img/GoldenBlondeCornrowsBun.jpg" class="img-rounded" style="width:100%; height:350px;" >
 </div>
-</div>
+</div><br><br>
 
 
 

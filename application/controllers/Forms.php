@@ -19,14 +19,14 @@ class Forms extends CI_Controller {
                 if ($this->form_validation->run() == FALSE)
                 {
                        
-                        $this->load->view('templates/header');
+                        $this->load->view('templates/homeheader');
                         $this->load->view('forms/register');
                         $this->load->view('templates/footer');
                 }
                 else
                 {
                    
-                        $this->load->view('templates/header');
+                        $this->load->view('templates/homeheader');
                              $this->load->view('forms/success');
                         $this->load->view('templates/footer');
                 }

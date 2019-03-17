@@ -16,12 +16,13 @@ public function register_client(){
 
     $this->load->library('form_validation');
 
-    $this->form_validation->set_rules('idno', 'ID Number','required');
+    $this->form_validation->set_rules('idno', 'ID Number','required|exact_length[8]');
     $this->form_validation->set_rules('name', 'Name','required');
     $this->form_validation->set_rules('gender', 'Gender','required');
-    $this->form_validation->set_rules('email', 'Email','required');
-    $this->form_validation->set_rules('pwd', 'Password','required');
-    $this->form_validation->set_rules('cpwd', 'Password Confirmation','required');
+    $this->form_validation->set_rules('email', 'Email','required|valid_email');
+    $this->form_validation->set_rules('phoneno', 'Phone Number','required|exact_length[10]');
+    $this->form_validation->set_rules('pwd', 'Password','trim|required');
+    $this->form_validation->set_rules('cpwd', 'Password Confirmation','trim|required');
 
 
     if ($this->form_validation->run() == FALSE)
@@ -52,7 +53,7 @@ public function register_client(){
         $count=$this->Adminreg->check_exist($id);
         if($count<1){
          $this->Adminreg->insert_client($id,$name,$gender,$email,$phone,$password);
-         $this->login();
+         redirect('admin_bookings');
         }else{
     
             echo ("A user with the same id exist");

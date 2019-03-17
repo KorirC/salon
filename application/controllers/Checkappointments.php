@@ -20,7 +20,7 @@ class Checkappointments extends CI_Controller {
         $id=$this->session->userdata('userid');
         $name=$this->session->userdata('username');
         $data['appointments']=$this->Myappointments_model->displayrecordsById($id);
-        $this->load->view('templates/homeheader');
+        $this->load->view('templates/header');
         $this->load->view('forms/myappointments',$data);
       }
   
