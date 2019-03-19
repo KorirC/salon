@@ -1,10 +1,4 @@
 
-
-
-
-
-<div>
-
 <div class=' row title_row'>
 <h1>This week's earnings</h1>
 <?php 

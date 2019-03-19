@@ -18,12 +18,18 @@ class Checkappointments extends CI_Controller {
       $this->is_logged_in();
       
         $id=$this->session->userdata('userid');
-        $name=$this->session->userdata('username');
         $data['appointments']=$this->Myappointments_model->displayrecordsById($id);
         $this->load->view('templates/header');
         $this->load->view('forms/myappointments',$data);
       }
-  
+  //display on queue services
+  public function show_service_inwait(){
+    $id=$this->session->userdata('userid');
+        $data['appointments']=$this->Myappointments_model->displayserviceById($id);
+        $this->load->view('templates/header');
+        $this->load->view('forms/inwait',$data);
+
+  }
           //function to cancel appointment
           public function cancel($id){
             $this->Myappointments_model->cancel_appointment($id);

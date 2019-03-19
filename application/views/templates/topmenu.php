@@ -56,12 +56,16 @@
 <li><a  class="button_well" href="<?php echo base_url();?>admin_stylists"><span class="glyphicon glyphicon-user"><div>Stylist</div></a></li>
 <li><a  class="button_well" href="<?php echo base_url();?>admin_feedback"><span class="	glyphicon glyphicon-list"><div>Feedback</div></a></li>
 </ul>
+<br><br><br>
 <div class="dropdown">
   <button class="dropbtn">Reports</button>
   <div class="dropdown-content">
     <a href="report">On Stylists</a>
     <a href="report_bookings">On Bookings</a>
+    <a href="report_earnings">On Earnings</a>
+    <a href="report_feedback">On Client's feedback</a>
   </div>
+  
 </div>
 </div>
 <!-- placeholder for styling  -->

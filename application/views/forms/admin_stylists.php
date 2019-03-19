@@ -39,7 +39,7 @@
             <td><?php echo $row->hairstyle;?></td> 
             <td><a class="btn btn-default" href="<?=base_url('delete_stylist/').$row->id ;?>">Delete</a> </td> 
             <td><a href="<?=base_url('updatestylist/'). $row->id;?>">Update</a></td>
-            
+            <td><a href="<?=base_url('singlestylist_report/'). $row->id;?>">Report</a></td>
       
             </tr>  
      

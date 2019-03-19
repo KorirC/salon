@@ -51,7 +51,7 @@ class MYPDF extends TCPDF {
         //date
         $tDate=date("F j, Y");
         // Page number
-        $this->Cell(0, 10, 'Generated on:' .$tDate, 0, false, 'C', 0, '', 0, false, 'T', 'M');
+        $this->Cell(0, 10, 'Generated on: ' .$tDate, 0, false, 'C', 0, '', 0, false, 'T', 'M');
     }
 }
 
@@ -102,7 +102,7 @@ $pdf->AddPage();
 
 // set some text to print
 $title = <<<EOD
-<h2>Report On Earnings</h2>
+<h2>Report On Client's Feedback</h2>
 EOD;
 
 // print a block of text using Write()
@@ -110,20 +110,21 @@ $pdf->WriteHTMLCell(0,0, '','', $title, 0,1,0, true, 'C', true);
 $table='<table style="border:1px solid #000; padding:6px;">';
 $table.='<tr style="background-color:#ccc;">
             <th style="border:1px solid #000;">No</th>
-            <th style="border:1px solid #000;">Id Number</th>
-            <th style="border:1px solid #000;">Amount</th>
-            <th style="border:1px solid #000;">Date</th>
-            <th style="border:1px solid #000;">Served by</th>
-        
+            <th style="border:1px solid #000;">Id No</th>
+            <th style="border:1px solid #000;">Name</th>
+            <th style="border:1px solid #000;">Phone Number</th>
+            <th style="border:1px solid #000;">Message</th>
+            <th style="border:1px solid #000;">Posted on</th>
         </tr>';
 $no=1;
 foreach($data as $row){
 $table.='<tr>
         <td style="border:1px solid #000;">'.$no++.'</td>
-        <td style="border:1px solid #000;">'.$row->user_id.'</td>
-        <td style="border:1px solid #000;">'.$row->amount.'</td>
-        <td style="border:1px solid #000;">'.$row->date_served.'</td>
-        <td style="border:1px solid #000;">'.$row->stylist.'</td>
+        <td style="border:1px solid #000;">'.$row->id.'</td>
+        <td style="border:1px solid #000;">'.$row->name.'</td>
+        <td style="border:1px solid #000;">'.$row->phone_number.'</td>
+        <td style="border:1px solid #000;">'.$row->message.'</td>
+        <td style="border:1px solid #000;">'.$row->posted_on.'</td>
     </tr>';
 }
 $table .='</table>';
