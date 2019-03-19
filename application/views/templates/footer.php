@@ -24,18 +24,23 @@
 
                 <div class="col-md-3 col-lg-3 col-sm-12">
                 <h4 style="color:#337ab7;">Opening hours</h4>
-                <p style="color:#777;FONT-FAMILY: -webkit-pictograph;">Mon  7:00 am – 8:00 pm<br>Tue  7:00 am – 8:00 pm<br>Wed  7:00 am – 8:00 pm<br>Thu  7:00 am – 8:00 pm<br>Fri  7:00 am – 8:00 pm<br>Sat  7:00 am – 8:00 pm<br>Sun  10:00 am – 5:00 pm</p>
+                <p style="color:#777;FONT-FAMILY: -webkit-pictograph;">Mon  7:00 am – 8:00 pm<br>Tue  7:00 am – 8:00 pm<br>Wed  7:00 am – 8:00 pm<br>Thu  7:00 am – 8:00 pm<br>Fri  7:00 am – 8:00 pm<br>Sat  7:00 am – 8:00 pm<br>Sun : closed</p>
                 </div>
 
                 <div class="col-md-3 col-lg-3 col-sm-12">
                 <h4 style="color:#337ab7;">Location</h4>
+                <p style="color:#777;FONT-FAMILY: -webkit-pictograph;">
+                    Kahawa Wendani,<br> 
+                    Wahu Salon building,<br>
+                    Nairobi Kenya.
+                    </p>
                 </div>
-                <hr>
-                <div>
-                <p style="color:#777;">All Rights Reserved.<br>Created WebDesigners Collection.</p>
+                <hr style="color:white;">
+                <div class="col-md-12 col-sm-12">
+                <p style="color:#777;FONT-FAMILY: -webkit-pictograph; text-align:center;">All Rights Reserved.<br>Created WebDesigners Collection.</p>
                 </div>
             </div> 
-            
+     
             </div>
         </footer>
     </body>

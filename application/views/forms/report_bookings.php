@@ -61,7 +61,7 @@ $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('Cynthia Chebet Korir');
-$pdf->SetTitle('Report on Bookings');
+$pdf->SetTitle('Report On Bookings');
 $pdf->SetSubject('');
 $pdf->SetKeywords('');
 

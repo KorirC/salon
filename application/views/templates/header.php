@@ -29,7 +29,7 @@
 <?php if($this->session->userdata('level')==='2'):?>
 <li><a href="<?php echo base_url();?>"><span class="glyphicon glyphicon-home"></span>Home</a></li>
 <li><a href="<?php echo base_url();?>products">Hair Products</a></li>
-<li><a href="<?php echo base_url();?>contact_us">Contact Us</a></li>
+<li><a href="<?php echo base_url();?>contactus">Contact Us</a></li>
 <li><a href="<?php echo base_url();?>gallery">Gallery</a></li>
 <!--ACCESS MENUS FOR Admin-->
 <?php elseif($this->session->userdata('level')==='1'):?>
