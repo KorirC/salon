@@ -34,7 +34,7 @@ class MYPDF extends TCPDF {
     //Page header
     public function Header() {
         // Logo
-        $image_file = K_PATH_IMAGES.'blow.jpg';
+        $image_file = K_PATH_IMAGES.'logo.jpg';
         $this->Image($image_file, 15, 15, 20, '', 'JPG', '', 'T', false, 300, '', false, false, 0, false, false, false);
         // Set font
         $this->SetFont('helvetica', 'B', 20);

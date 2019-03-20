@@ -34,12 +34,12 @@ class MYPDF extends TCPDF {
     //Page header
     public function Header() {
         // Logo
-        $image_file = K_PATH_IMAGES.'blow.jpg';
+        $image_file = K_PATH_IMAGES.'logo.jpg';
         $this->Image($image_file, 15, 15, 20, '', 'JPG', '', 'T', false, 300, '', false, false, 0, false, false, false);
         // Set font
         $this->SetFont('helvetica', 'B', 20);
         // Title
-        $this->Cell(0, 15, 'Wahu Salon ', 0, false, 'C', 0, '', 0, false, 'M', 'M');
+        $this->Cell(0,20, 'Wahu Salon ', 0, false, 'C', 0, '', 0, false, 'M', 'M');
     }
 
     // Page footer
@@ -120,28 +120,28 @@ $table='<table style="border:1px solid #000; padding:6px;">';
 $no=1;
 foreach($data as $row){
     
-$table.='<tr style="text-align:left;">
+$table.='<tr style="text-align:left;font-size:20px;">
            
             <th style="border:1px solid #000;background-color:#ccc;">Name:</th>
             <td style="border:1px solid #000;">'.$row->name.'</td>
         </tr>
-        <tr style="text-align:left;">
+        <tr style="text-align:left;font-size:20px;">
             <th style="border:1px solid #000;background-color:#ccc;">Id Number:</th>
             <td style="border:1px solid #000;">'.$row->id.'</td>
         </tr>
-        <tr style="text-align:left;">
+        <tr style="text-align:left;font-size:20px;">
             <th style="border:1px solid #000;background-color:#ccc;">Gender:</th>
             <td style="border:1px solid #000;">'.$row->gender.'</td>
         </tr>
-        <tr style="text-align:left;">
+        <tr style="text-align:left;font-size:20px;">
             <th style="border:1px solid #000; background-color:#ccc;">Email:</th>
             <td style="border:1px solid #000;">'.$row->email.'</td>
         </tr>
-        <tr style="text-align:left;">
+        <tr style="text-align:left;font-size:20px;">
             <th style="border:1px solid #000;background-color:#ccc;">Phone Number:</th>
             <td style="border:1px solid #000;">'.$row->phone_number.'</td>
         </tr>
-        <tr style="text-align:left;">
+        <tr style="text-align:left;font-size:20px;">
             <th style="border:1px solid #000; background-color:#ccc;">Hairstyles:</th>
             <td style="border:1px solid #000;">'.$row->hairstyle.'</td>
 </tr>';

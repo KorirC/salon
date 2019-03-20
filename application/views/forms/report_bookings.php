@@ -27,25 +27,29 @@
 // Include the main TCPDF library (search for installation path).
 // require_once('tcpdf_include.php');
 
-
+// define ('PDF_HEADER_STRING', "by Cynthia Chebet - WahuSalon.com\nchebetcynthia8@gmail.com");
 // Extend the TCPDF class to create custom Header and Footer
 class MYPDF extends TCPDF {
 
     //Page header
     public function Header() {
+        
         // Logo
-        $image_file = K_PATH_IMAGES.'blow.jpg';
+        $image_file = K_PATH_IMAGES.'logo.jpg';
         $this->Image($image_file, 15, 15, 20, '', 'JPG', '', 'T', false, 300, '', false, false, 0, false, false, false);
         // Set font
         $this->SetFont('helvetica', 'B', 20);
         // Title
         $this->Cell(0, 15, 'Wahu Salon ', 0, false, 'C', 0, '', 0, false, 'M', 'M');
+        
     }
 
     // Page footer
     public function Footer() {
         // Position at 15 mm from bottom
         $this->SetY(-30);
+        // set color
+        // $this->SetTextColor(255,0,0);
         // Set font
         $this->SetFont('helvetica', 'I', 12);
         //date
@@ -66,6 +70,7 @@ $pdf->SetSubject('');
 $pdf->SetKeywords('');
 
 // set default header data
+
 $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
 
 // set header and footer fonts
@@ -107,6 +112,7 @@ EOD;
 
 // print a block of text using Write()
 $pdf->WriteHTMLCell(0,0, '','', $title, 0,1,0, true, 'C', true);
+$PDF_HEADER_STRING = "Tel 1234567896 Fax 987654321\n";
 $table='<table style="border:1px solid #000; padding:6px;">';
 $table.='<tr style="background-color:#ccc;">
             <th style="border:1px solid #000;">No</th>

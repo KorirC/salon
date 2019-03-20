@@ -2,9 +2,10 @@
 <head>
 <title>Wahu Salon</title>
 <script src="<?php echo base_url("assets/css/Chart.min.js"); ?>"></script>
-<!-- <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script> -->
+<script src="<?php echo base_url("assets/css/canvas-toBlob.js"); ?>"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
 <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>

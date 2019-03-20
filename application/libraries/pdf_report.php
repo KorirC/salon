@@ -8,5 +8,6 @@ class Pdf_report extends TCPDF
   public function report(){
       $this->$ci->get_instance();
   }
+  
 
 }?>

@@ -31,9 +31,14 @@ for($i=0;$i<sizeof($last_days);$i++){
 </div>
 
 <canvas id="lastWeekChart" width="400" height="200"></canvas>
+<a id="download" download="myImage.jpg" class="btn btn-primary" href="" onclick="download_img(this);">Download</a>
+   
 <script>
+
 var ctx = document.getElementById("thisWeekChart").getContext('2d');
+
 var myChart = new Chart(ctx, {
+    
     type: 'bar',
     data: {
         labels: ["Sunday","Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"],
@@ -126,6 +131,13 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+download_img = function(el) {
+  var image = thisWeekChart.toDataURL("image/jpg");
+  el.href = image;
+};
+
+
 </script>
 
 
