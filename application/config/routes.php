@@ -77,6 +77,7 @@ $route['report']='report_controller/index';
 $route['report_bookings']='report_controller/show_bookings';
 $route['report_feedback']='report_controller/show_feedback';
 $route['report_earnings']='report_controller/show_earnings';
+$route['reportearnings']='report_controller/earnings_day';
 $route['singlestylist_report/(:any)']='report_controller/single_stylist/$1';
 
 // routes for stylist

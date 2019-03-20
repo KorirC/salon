@@ -13,11 +13,20 @@ public function get_earning_by_date($date){
     $query=$this->db->get_where("earning_table", array("date_served"=>$date));
 	return $query->result_array();
 }
+// display earnings
 function display_earnings()
 	{
 	$query=$this->db->get("earning_table");
 	return $query->result();
 	}
+	//get earning per date
+public function get_earningby_date($date){
+	$this->db->select('SUM(amount) AS amount, date_served');
+	$this->db->from('earning_table');
+	$this->db->group_by('date_served');
+	$query=$this->db->get();
+	return $query->result();
+	
 }
-
+}
 ?>

@@ -67,7 +67,7 @@ if ( ! function_exists('now'))
 			$timezone = config_item('time_reference');
 		}
 
-		if ($timezone === 'local' OR $timezone === date_default_timezone_get())
+		if ($timezone === 'local' OR $timezone === date_default_timezone_get('GMT'))
 		{
 			return time();
 		}
@@ -569,7 +569,7 @@ if ( ! function_exists('timezone_menu'))
 	 * @param	mixed	attributes
 	 * @return	string
 	 */
-	function timezone_menu($default = 'UTC', $class = '', $name = 'timezones', $attributes = '')
+	function _menu($default = 'UTC', $class = '', $name = 'timezones', $attributes = '')
 	{
 		$CI =& get_instance();
 		$CI->lang->load('date');

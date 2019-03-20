@@ -233,7 +233,7 @@ if (!defined('K_TCPDF_THROW_EXCEPTION_ERROR')) {
 }
 
 if (!defined('K_TIMEZONE')) {
-	define('K_TIMEZONE', @date_default_timezone_get());
+	define('K_TIMEZONE', @date_default_timezone_get('GMT'));
 }
 
 //============================================================+
