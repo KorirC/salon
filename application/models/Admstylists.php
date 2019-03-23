@@ -13,6 +13,14 @@ class Admstylists extends CI_Model{
 // display records by ID	
 	function displayrecordsById($id)
 	{
+		// $this->db->from('stylist_table');
+        // $this->db->join('earning_table','earning_table.stylist=stylist_table.name ');
+        // $where=array(
+        //     'stylist_table.id'=>$id,
+        // );
+		// $this->db->where($where);
+		// $query=$this->db->get();
+		// return $query->result();
 		$query=$this->db->get_where('stylist_table',array('id'=>$id));
 		return $query->result();
 	}
@@ -26,9 +34,6 @@ class Admstylists extends CI_Model{
 			'phone_number'=>$phone_number,
 			'hairstyle'=>$hairstyle
 		);
-		
-		// echo $id;
-		// var_dump($array);
 		$this->db->where('id',$id);
 		$this->db->update('stylist_table',$array);
 

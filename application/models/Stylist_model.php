@@ -9,7 +9,8 @@ class Stylist_model extends CI_Model{
             'gender'=>$gender,
             'email'=>$email,
             'phone_number'=>$phone,
-            'hairstyle'=>$hairstyle
+            'hairstyle'=>$hairstyle,
+            
         );
             return $this->db->insert('stylist_table', $data);
         }
@@ -19,6 +20,22 @@ class Stylist_model extends CI_Model{
         $query=$this->db->get_where('stylist_table',array('id'=>$id));
         $result=$query->result_array();
         return sizeof($result);
-    }
+    }   
+
+    // public function count($stylist){
+    //     $this->db->select('stylist, COUNT(stylist)AS count');
+    //     $this->db->from('earning_table');
+    //     $this->db->where('stylist',$stylist);
+    //     $this->db->group_by('stylist');
+    //     $query = $this->db->get();
+    //     // $rowcount = $query->num_rows();
+	// 	return $query->result();
+
+    // }
+    //  public function add_count($clients){
+    //      return $this->db->insert('stylist_table',array('served_clients'=>$clients));
+
+    // }
+       
     }
 ?>

@@ -20,9 +20,9 @@
     <input type="password" class="form-control" name="pwd">
   </div>
   <div class="form-group">
-  <button type="submit" class="btn-login btn-default">Submit</button><br><br>
-  <a href="<?php echo base_url();?>forms">Sign Up</a>
-  </div>
+  <button type="submit" class="btn-login btn-default">Submit</button> <a style="color:black;" href="<?php echo base_url();?>forms">Sign Up</a>
+ 
+  </div><br><br>
   </div>
 </form>
 </div>

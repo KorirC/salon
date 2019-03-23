@@ -128,7 +128,24 @@ $table.='<tr>
 }
 $table .='</table>';
 
+
+
 $pdf->WriteHTMLCell(0,0, '','', $table, 0,1,0, true, 'C', true);
+
+$pdf->WriteHTMLCell(0,0, '','', $title, 0,1,0, true, 'C', true);
+$table1='<table style="border:1px solid #000; padding:6px;">';
+$table1.='<tr style="background-color:#ccc;">
+           
+            <th style="border:1px solid #000;">Total</th>
+        </tr>';
+$no=1;
+foreach($data as $row){
+$table1.='<tr>
+        <td style="border:1px solid #000;">'.$row->amount.'</td>
+    </tr>';
+}
+$table1.='</table>';
+$pdf->WriteHTMLCell(0,0, '','', $table1, 0,1,0, true, 'C', true);
 // ---------------------------------------------------------
 
 //Close and output PDF document

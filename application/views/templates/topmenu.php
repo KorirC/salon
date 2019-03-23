@@ -60,9 +60,10 @@
 <div class="dropdown">
   <button class="dropbtn">Reports</button>
   <div class="dropdown-content">
-    <a href="report">On Stylists</a>
-    <a href="report_bookings">On Bookings</a>
-    <a href="report_earnings">On Earnings</a>
+    <a href="report">Stylists</a>
+    <a href="report_bookings">Bookings</a>
+    <a href="report_earnings">Earnings</a>
+    <a href="reportearnings">Earnings per day</a>
     <a href="report_feedback">On Client's feedback</a>
   </div>
   

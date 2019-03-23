@@ -27,11 +27,17 @@ class Report_controller extends  CI_Controller {
       $data=$this->Earning_model->display_earnings();
       $this->load->view('forms/report_earnings',['data'=>$data]);
     }
- public function earnings_day(){
+    //per day
+  public function earnings_day(){
   $date=date("Y-m-d");
    $data=$this->Earning_model->get_earningby_date($date);
+  //  $data=$this->Earning_model->total();
    $this->load->view('forms/totals',['data'=>$data]);
  }
-  
-  }
+  // total
+  public function total(){
+     $data=$this->Earning_model->total();
+     $this->load->view('forms/totals',['data'=>$data]);
+   }
+}
 ?>

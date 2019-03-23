@@ -8,7 +8,7 @@
 <body>
 
 <div class="container">
-  <h2>Stylists</h2>
+  <h2 style=" font-family: -webkit-pictograph;">Stylists</h2>
 
   <p></p>            
   <table class="table table-striped">

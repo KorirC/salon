@@ -67,7 +67,7 @@ if(isset($message)){
 
 ?>
 <div class="container" style="color:black;">
-  <h2 style="text-align:center;">Book For Our Services</h2>
+  <h2 style=" font-family: -webkit-pictograph;text-align:center;">Book For Our Services</h2>
 <!-- 1st row -->
  <div class="row"  ><!--style="margin-left:140px;"  -->
 <div class="col-md-4">

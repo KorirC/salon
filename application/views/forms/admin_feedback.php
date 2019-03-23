@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Feedback</h2>
+  <h2 style=" font-family: -webkit-pictograph;">Feedback</h2>
 
   <p></p>            
   <table class="table table-striped">

@@ -28,5 +28,12 @@ public function get_earningby_date($date){
 	return $query->result();
 	
 }
+//total
+public function total(){
+	$this->db->select('SUM(amount)AS amount');
+	$this->db->from('earning_table');
+	$query=$this->db->get();
+	return $query->result();
+}
 }
 ?>

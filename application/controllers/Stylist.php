@@ -31,6 +31,7 @@ class Stylist extends CI_Controller {
          $count=$this->Stylist_model->check_exist($id);
         if($count<1){
          $this->Stylist_model->recruit($name,$id,$gender,$email,$phone,$hairstyle);
+        
 
         echo $this->session->set_flashdata('msg','Successfully registered');
         redirect('admin_stylists');
@@ -47,6 +48,7 @@ class Stylist extends CI_Controller {
         $this->load->view('forms/stylist',$msg);
         // $this->load->view('templates/footer');
     }
+   
         
     }
 ?>

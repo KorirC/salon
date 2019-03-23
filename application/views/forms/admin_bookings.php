@@ -28,7 +28,7 @@ input[type=text]{
 <body>
 
 <div class="container">
-  <h2>Appointments Made</h2>
+  <h2 style=" font-family: -webkit-pictograph;">Appointments Made</h2>
   <div class="rightfloat">
   <?php echo form_open('filter_by_date'); ?>
       <label for="date">Filter by Date:</label>

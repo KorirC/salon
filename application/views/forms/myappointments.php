@@ -1,6 +1,6 @@
 <div class="container">
 <a href="<?php echo base_url();?>inwait" class="btn btn-default" >Waiting</a>
-<h2 style="text-align:center;">Previously Offered Services</h2>
+<h2 style="text-align:center; font-family: -webkit-pictograph;">Previously Offered Services</h2>
 <table class="table table-striped">
     <thead>
       <tr>
