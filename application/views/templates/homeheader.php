@@ -44,7 +44,7 @@ body, html {
 <nav class="navbar navbar-inverse">
 <div class="container">
 <div class="navbar-header">
-<a class="navbar-brand" href="<?php echo base_url();?>" style=" font-family: -webkit-pictograph;">Wahu Salon</a>
+<a class="navbar-brand" href="<?php echo base_url();?>" style=" font-family: -webkit-pictograph; font-size:40px;">Wahu Salon</a>
 </div>
 <div id="navbar">
 <ul class="nav navbar-nav header_nav">
