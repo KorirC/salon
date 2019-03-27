@@ -5,8 +5,8 @@ class Checkfeedback extends CI_Controller {
     $id=$this->session->userdata('userid');
     if(!isset($id)){
         // this user is not logged in
-        echo "Unauthorized Access!!";
-        // redirect('login');
+        // echo "Unauthorized Access!!";
+        redirect('login');
 
     }else{
       if($this->session->userdata('level')==='1'){
