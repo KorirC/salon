@@ -112,9 +112,9 @@ if(isset($message)){
 </div>
 </div>
 <div class="row">
-<div class="col-md-9">
+<div class="col-md-9" id="datetimepicker">
       <label for="date">Date:</label>
-      <input type="date" style="width:70%;"class="form-control" name="date" placeholder="Enter date" required><br>
+      <input id="calid" type="date" class="form-control" style="width:70%;" name="date" min="<?php echo date('Y-m-d'); ?>" required><br>
       <button type="submit" class="btn btn-default">Submit</button>
     </div>
 </div>
@@ -142,4 +142,7 @@ if(isset($message)){
       
     </div>
 </div>
+
+
+
 <br><br>

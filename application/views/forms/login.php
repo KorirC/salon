@@ -1,6 +1,6 @@
 
 <div class="bg-img"> 
-<div class="formcard_login" >
+<div class="formcard_login" style="margin-left:300px;">
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('auth_client'); ?>

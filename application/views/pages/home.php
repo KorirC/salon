@@ -222,7 +222,7 @@ function showSlides(n) {
  <div class="row">
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/Blowdry2(2).jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px;">
-  <p style=" font-size:15px; ">Blow dry starting from ksh 100</p>
+  <p style=" font-size:15px; ">Blow dry starting from ksh 200</p>
   </div>
   <div class="col-md-4 col-sm-4">
   <img  src="assets/img/hairstyling2.jpg" alt="Norway" class="img-rounded"style="width:150px; height:150px; ">

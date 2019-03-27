@@ -10,6 +10,7 @@ class Stylist_model extends CI_Model{
             'email'=>$email,
             'phone_number'=>$phone,
             'hairstyle'=>$hairstyle,
+            'status'=>"active"
             
         );
             return $this->db->insert('stylist_table', $data);
@@ -21,21 +22,36 @@ class Stylist_model extends CI_Model{
         $result=$query->result_array();
         return sizeof($result);
     }   
-
-    // public function count($stylist){
-    //     $this->db->select('stylist, COUNT(stylist)AS count');
+// get stylist
+public function select_stylist(){
+    $this->db->select('name','id');
+    $this->db->from('stylist_table');
+    $this->db->where('status','active');
+    $query=$this->db->get();
+    return $query->result();
+}
+    // public function count(){
+ 
+    //     $this->db->select('stylist, COUNT(stylist) as total');
     //     $this->db->from('earning_table');
-    //     $this->db->where('stylist',$stylist);
-    //     $this->db->group_by('stylist');
-    //     $query = $this->db->get();
-    //     // $rowcount = $query->num_rows();
-	// 	return $query->result();
-
+    //     $this->db->group_by('stylist'); 
+    //     $query=$this->db->get();
+    //     print_r($query->result_array()); 
     // }
-    //  public function add_count($clients){
-    //      return $this->db->insert('stylist_table',array('served_clients'=>$clients));
-
-    // }
-       
+       // count
+public function count(){
+    $this->db->from('stylist_table');
+    $this->db->join('earning_table','earning_table.stylist=stylist_table.name');
+    $this->db->select('stylist, COUNT(stylist) as total');
+    $this->db->group_by('stylist');
+    $this->db->set('served_clients','total');
+    $query=$this->db->get();
+    $total=$query;
+    // print_r($query->result_array());
+    // return $query->result();
+    foreach($total as $print) {
+		return $print;
+	}
+}
     }
 ?>

@@ -78,11 +78,14 @@ $route['report_bookings']='report_controller/show_bookings';
 $route['report_feedback']='report_controller/show_feedback';
 $route['report_earnings']='report_controller/show_earnings';
 $route['reportearnings']='report_controller/earnings_day';
-$route['report_earnings']='report_controller/total';
+$route['totals']='earning/totals';
+$route['updatetotals']='report_controller/sum_totals';
 $route['singlestylist_report/(:any)']='report_controller/single_stylist/$1';
+$route['update_totals']='report_controller/refresh';
 
 // routes for stylist
 $route['addstylist']='stylist/index';
+$route['count']='stylist/load';
 
 // hairproducts page
 $route['products']='hairproducts_controller/index';

@@ -1,4 +1,6 @@
+<h2 style="text-align:center; font-family: -webkit-pictograph;">Future Services</h2>
 <table class="table table-striped">
+
     <thead>
       <tr>
     <th>Date</th>
@@ -18,8 +20,11 @@
             <td><?php echo $row->status;?></td> 
             
             <td><a class="btn btn-danger" href="<?php echo base_url('cancel/').$row->auto ?>">Cancel Appointment</a></td> 
-            </tr>  
+            </tr>
+           
          <?php }  
          ?>   
+          
     </tbody>
   </table>
+  <a class="btn btn-default" href="<?=base_url('myappointments');?>">Back</a>

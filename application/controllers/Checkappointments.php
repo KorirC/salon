@@ -33,7 +33,7 @@ class Checkappointments extends CI_Controller {
           //function to cancel appointment
           public function cancel($id){
             $this->Myappointments_model->cancel_appointment($id);
-            $this->index();
+            $this->show_service_inwait();
           }
           
     }

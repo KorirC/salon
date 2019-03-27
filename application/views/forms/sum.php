@@ -51,7 +51,7 @@ class MYPDF extends TCPDF {
         //date
         $tDate=date("F j, Y");
         // Page number
-        $this->Cell(0, 10, 'Date:'.$tDate, 0, false, 'C', 0, '', 0, false, 'T', 'M');
+        $this->Cell(0, 10, 'Generated on:' .$tDate, 0, false, 'C', 0, '', 0, false, 'T', 'M');
     }
 }
 
@@ -61,7 +61,7 @@ $pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('Cynthia Chebet Korir');
-$pdf->SetTitle('Report On Stylists');
+$pdf->SetTitle('Totals');
 $pdf->SetSubject('');
 $pdf->SetKeywords('');
 
@@ -102,39 +102,36 @@ $pdf->AddPage();
 
 // set some text to print
 $title = <<<EOD
-<h2>Report On Stylists</h2>
+<h2>SUM</h2>
 EOD;
 
 // print a block of text using Write()
 $pdf->WriteHTMLCell(0,0, '','', $title, 0,1,0, true, 'C', true);
 $table='<table style="border:1px solid #000; padding:6px;">';
 $table.='<tr style="background-color:#ccc;">
-        <th style="border:1px solid #000;">No</th>
-        <th style="border:1px solid #000;">Name</th>
-        <th style="border:1px solid #000;">Id No</th>
-        <th style="border:1px solid #000;">Gender</th>
-        <th style="border:1px solid #000;">Email</th>
-        <th style="border:1px solid #000;">Phone Number</th>
-        <th style="border:1px solid #000;">Hairstyle/s</th>
+           
+            <th style="border:1px solid #000;">Total</th>
+            
         
-</tr>';
+        </tr>';
 $no=1;
+
+	
 
 foreach($data as $row){
 $table.='<tr>
-            <td style="border:1px solid #000;">'.$no++.'</td>
-            <td style="border:1px solid #000;">'.$row->name.'</td>
-            <td style="border:1px solid #000;">'.$row->id.'</td>
-            <td style="border:1px solid #000;">'.$row->gender.'</td>
-            <td style="border:1px solid #000;">'.$row->email.'</td>
-            <td style="border:1px solid #000;">'.$row->phone_number.'</td>
-            <td style="border:1px solid #000;">'.$row->hairstyle.'</td>
-            
-
-</tr>';
+        <td style="border:1px solid #000;">'.$row->amount.'</td>
+    </tr>'
+   
+    
+    ;
 }
-$table .='</table>';
+
+$table.='</table>';
 $pdf->WriteHTMLCell(0,0, '','', $table, 0,1,0, true, 'C', true);
+
+
+
 // ---------------------------------------------------------
 
 //Close and output PDF document

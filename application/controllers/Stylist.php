@@ -48,7 +48,10 @@ class Stylist extends CI_Controller {
         $this->load->view('forms/stylist',$msg);
         // $this->load->view('templates/footer');
     }
-   
+   public function load(){
+       $this->Stylist_model->count();
+    
+   }
         
     }
 ?>

@@ -8,7 +8,7 @@ class Report_controller extends  CI_Controller {
     }
     //display single stylist details
     public function single_stylist($id){
-      $data=$this->Admstylists->displayrecordsById($id);
+      $data=$this->Admstylists-> displayrecordsById($id);
       $this->load->view('forms/singlestylist_report',['data'=>$data]);
     }
 
@@ -26,18 +26,22 @@ class Report_controller extends  CI_Controller {
     public function show_earnings(){
       $data=$this->Earning_model->display_earnings();
       $this->load->view('forms/report_earnings',['data'=>$data]);
+      
+    //  $this->load->view('forms/totals',['data'=>$total]);
     }
     //per day
   public function earnings_day(){
   $date=date("Y-m-d");
    $data=$this->Earning_model->get_earningby_date($date);
-  //  $data=$this->Earning_model->total();
    $this->load->view('forms/totals',['data'=>$data]);
  }
-  // total
-  public function total(){
-     $data=$this->Earning_model->total();
-     $this->load->view('forms/totals',['data'=>$data]);
-   }
+  public function sum_totals(){
+    $data=$this->Earning_model->total();
+    $this->load->view('forms/sum',['data'=>$data]);
+  }
+  public function refresh(){
+    $this->Earning_model->update_totals();
+    redirect('earnings');
+  }
 }
 ?>

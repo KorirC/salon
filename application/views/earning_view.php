@@ -1,6 +1,7 @@
 
 <div class=' row title_row'>
 <h1>This week's earnings</h1>
+<a href="update_totals">Sum Income</a>
 <?php 
 $days=$thisearngs[0];
 $earnings=$thisearngs[1];

@@ -13,7 +13,7 @@
 				<div class="headertext">
 					 REGISTER <hr>
         </div>
-<div class="formcard">
+<div class="formcard" style="margin-left:300px;">
 
 <?php echo form_open('register'); ?>
 <?php 

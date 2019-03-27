@@ -26,19 +26,31 @@ input[type=text]{
 
 </head>
 <body>
-
+<?php echo validation_errors(); ?>
 <div class="container">
-  <h2 style="text-align:center;">Enter the Amount Paid</h2>
+<h2 style="text-align:center;">Enter the Amount Paid</h2>
   <br><br>
   <div class="container">
   
   <?php echo form_open('income'."/".$auto_id."/".$user_id); ?>
-      <!-- <label for="amount">Enter the amount:</label> -->
+      
+      
       <div class="form-group">
-          <input type="number" class="bt nbtn btn-default" name="amount" placeholder="Enter amount" required>
+          <label for="amount">Amount:</label>
+         <br>
+          <input type="number" min="200" class="bt nbtn btn-default" name="amount" placeholder="Enter amount" required>
         </div>
         <div class="form-group">
-          <input type="text" class="bt nbtn btn-default" name="name" placeholder="Stylist">
+        <label for="stylist">Served By:</label> 
+          <select class="form-control"style="width:50%;" name="stylist">
+          <?php 
+
+            foreach($groups as $row)
+            { 
+              echo '<option value="'.$row->name.'">'.$row->name.'</option>';
+            }
+            ?>
+          </select>
         </div>
         <div class="form-group">
         <button type="submit" class="btn btn-default">Submit</button>

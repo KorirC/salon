@@ -58,6 +58,7 @@ class Checkbookings extends CI_Controller {
           public function accept_booking($id,$userid){
             $data['auto_id']=$id;
             $data['user_id']=$userid;
+            $data['groups'] = $this->Stylist_model->select_stylist();
              $this->load->view('templates/adminheader');
              $this->load->view('forms/amount',$data);
 
@@ -70,15 +71,16 @@ class Checkbookings extends CI_Controller {
 
           //add earning
           public function insert_earning($autoid,$id){
-            $amount=$this->input->post('amount');
-            $stylist=$this->input->post('name');
-            $this->Earning_model->insert_earning($id,$amount,$stylist);
-            $this->Admbookings->change_status($autoid,"Cleared");
-            redirect('admin_bookings');
-          }
+            
+                    $amount=$this->input->post('amount');
+                    $stylist=$this->input->post('stylist');
+                    $this->Earning_model->insert_earning($id,$amount,$stylist);
+                    $this->Admbookings->change_status($autoid,"Cleared");
+                    redirect('admin_bookings');
+                  }
 
           
           }
-
+        
         
       ?>

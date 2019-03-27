@@ -112,20 +112,30 @@ $table.='<tr style="background-color:#ccc;">
             <th style="border:1px solid #000;">No</th>
             <th style="border:1px solid #000;">Amount</th>
             <th style="border:1px solid #000;">Date</th>
+          
         
         </tr>';
 $no=1;
+
+	
+
 foreach($data as $row){
 $table.='<tr>
         <td style="border:1px solid #000;">'.$no++.'</td>
         <td style="border:1px solid #000;">'.$row->amount.'</td>
         <td style="border:1px solid #000;">'.$row->date_served.'</td>
-      
-    </tr>';
+       
+    </tr>'
+   
+    
+    ;
 }
-$table .='</table>';
 
+$table.='</table>';
 $pdf->WriteHTMLCell(0,0, '','', $table, 0,1,0, true, 'C', true);
+
+
+
 // ---------------------------------------------------------
 
 //Close and output PDF document

@@ -7,14 +7,15 @@ public function register_client(){
 
     $this->load->library('form_validation');
 
+   
     $this->form_validation->set_rules('idno', 'ID Number','required|exact_length[8]');
     $this->form_validation->set_rules('name', 'Name','required');
     $this->form_validation->set_rules('gender', 'Gender','required');
-    $this->form_validation->set_rules('phoneno', 'Phone Number','required|exact_length[10]');
+    $this->form_validation->set_rules('phoneno', 'Phone Number','required|regex_match[/^[0-9]{10}$/]');
     $this->form_validation->set_rules('email', 'Email','required|is_unique[client_table.email]valid_email');
     $this->form_validation->set_rules('pwd', 'Password','trim|required');
     $this->form_validation->set_rules('cpwd', 'Password Confirmation','trim|required');
-
+// 'required|exact_length[10]'
 
     if ($this->form_validation->run() == FALSE)
     {
@@ -27,7 +28,9 @@ public function register_client(){
     {
        
     $id=$this->input->post('idno');
+   
     $name=$this->input->post('name');
+    
     $gender=$this->input->post('gender');
     $email=$this->input->post('email');
     $phone=$this->input->post('phoneno');
@@ -62,7 +65,7 @@ public function register_client(){
         $msg['message']='';
         $this->load->view('templates/homeheader');
         $this->load->view('forms/login',$msg);
-        // $this->load->view('templates/footer');
+        $this->load->view('templates/footer');
     }
     // login user
     public function auth_user(){
@@ -72,6 +75,7 @@ public function register_client(){
         
         if($users->num_rows() > 0){
             $data  = $users->row_array();
+            $name=$data['name'];
             $email = $data['email'];
             $password  = $data['password'];
             $level = $data['user_level'];
@@ -79,6 +83,7 @@ public function register_client(){
             
             $sesdata = array(
                 'userid'=>$data['id'],
+                'name'=>$name,
                 'email' => $email,
                 'pwd'  => $password,
                 'level'     => $level,
@@ -89,7 +94,7 @@ public function register_client(){
             if($level === '1'){
                 redirect('admin_bookings');
      
-            // access login for staff
+            // access login for clients
             }elseif($level === '2'){
                 redirect('home');
      
