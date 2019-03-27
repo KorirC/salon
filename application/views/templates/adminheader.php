@@ -17,7 +17,7 @@
     <!-- notice change the class by adding 4 -->
 <div class="container4">
 <div class="navbar-header">
-<a  href="<?php echo base_url();?>"><h2>Wahu Salon</h2></a>
+<a  href="<?php echo base_url();?>" style=" font-family: -webkit-pictograph;"><h2>Wahu Salon</h2></a>
 </div>
 <div id="navbar">
 <ul class="nav navbar-nav ">
