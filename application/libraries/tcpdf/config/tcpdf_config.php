@@ -220,7 +220,7 @@ define('K_TCPDF_THROW_EXCEPTION_ERROR', false);
 /**
  * Default timezone for datetime functions
  */
-// define('K_TIMEZONE', '');
+define('K_TIMEZONE', 'UTC+0300');
 
 //============================================================+
 // END OF FILE

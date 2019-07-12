@@ -49,7 +49,7 @@ class MYPDF extends TCPDF {
         // Set font
         $this->SetFont('helvetica', 'I', 12);
         //date
-        $tDate=date("F j, Y");
+        $tDate=date("F j, Y h:i:sa");
         // Page number
         $this->Cell(0, 10, 'Generated on:' .$tDate, 0, false, 'C', 0, '', 0, false, 'T', 'M');
     }

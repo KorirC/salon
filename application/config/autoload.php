@@ -49,7 +49,7 @@ $autoload['packages'] = array();
 | application/libraries/ directory, with the addition of the
 | 'database' library, which is somewhat of a special case.
 |
-| Prototype:
+|    Prototype:
 |
 |	$autoload['libraries'] = array('database', 'email', 'session');
 |
